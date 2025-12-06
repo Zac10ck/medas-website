@@ -294,10 +294,11 @@ p {
 
 .logo svg,
 .logo img {
-  width: 42px;
-  height: 42px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--radius);
   transition: transform 0.2s ease;
+  object-fit: contain;
 }
 
 .logo:hover svg,
@@ -1242,11 +1243,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: var(--white);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 800;
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 12px rgba(15, 76, 129, 0.25);
