@@ -115,9 +115,24 @@
   }
   </script>
 
+  <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://medassolutions.com">
+  <link rel="preconnect" href="https://flagcdn.com">
+  <link rel="dns-prefetch" href="https://api.web3forms.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="assets/images/medas-logo.png" as="image">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" as="style">
+
+  <!-- Fonts with optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -127,7 +142,7 @@
     <div class="container">
       <nav class="nav">
         <a href="index.html" class="logo">
-          <img src="assets/images/medas-logo.png" alt="MEDAS Solutions" class="logo-image">
+          <img src="assets/images/medas-logo.png" alt="MEDAS Solutions" class="logo-image" fetchpriority="high">
         </a>
         <ul class="nav-menu">
           <li class="nav-item has-dropdown">
@@ -159,9 +174,27 @@
               <li><a href="about/team.html">Our Team</a></li>
             </ul>
           </li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">Resources</a>
+            <ul class="dropdown">
+              <li><a href="blog/index.html">Blog</a></li>
+              <li><a href="case-studies/index.html">Case Studies</a></li>
+              <li><a href="solution-finder.html">Solution Finder</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a href="contact/index.html" class="nav-link">Contact</a></li>
         </ul>
         <div class="nav-actions">
+          <div class="language-switcher">
+            <span class="lang-btn active">
+              <img src="https://flagcdn.com/w20/gb.png" alt="English">
+              EN
+            </span>
+            <a href="ar/index.html" class="lang-btn">
+              <img src="https://flagcdn.com/w20/sa.png" alt="العربية">
+              عربي
+            </a>
+          </div>
           <a href="contact/index.html" class="btn btn-primary">Request Demo</a>
         </div>
         <button class="menu-toggle" aria-label="Toggle menu">
@@ -178,10 +211,18 @@
     <ul class="mobile-nav-menu">
       <li><a href="solutions/index.html">Solutions</a></li>
       <li><a href="products/index.html">Products</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="case-studies/index.html">Case Studies</a></li>
+      <li><a href="solution-finder.html">Solution Finder</a></li>
       <li><a href="services/index.html">Services</a></li>
       <li><a href="about/index.html">About</a></li>
-      <li><a href="about/team.html">Our Team</a></li>
       <li><a href="contact/index.html">Contact</a></li>
+      <li>
+        <div class="language-switcher" style="justify-content: center; margin: 1rem 0; border: none;">
+          <span class="lang-btn active">EN</span>
+          <a href="ar/index.html" class="lang-btn">عربي</a>
+        </div>
+      </li>
       <li><a href="contact/index.html" class="btn btn-primary">Request Demo</a></li>
     </ul>
   </div>
@@ -814,6 +855,11 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 MEDAS Solutions. All rights reserved. | Offices in UAE, Saudi Arabia, Qatar, Kuwait, Bahrain & India</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="ar/index.html">العربية</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -857,7 +903,7 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
-  <script src="js/popup.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/popup.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -7,6 +8,18 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/"/>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Arabic Homepage -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/"/>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -115,31 +128,105 @@
 
   <!-- Solutions Pages -->
   <url>
-    <loc>https://zac10ck.github.io/medas-website/solutions/hospitals.html</loc>
+    <loc>https://zac10ck.github.io/medas-website/solutions/his.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/solutions/emr.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/solutions/lims.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Section -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/blog/</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/blog/healthcare-digital-transformation-gcc.html</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://zac10ck.github.io/medas-website/solutions/clinics.html</loc>
+    <loc>https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://zac10ck.github.io/medas-website/solutions/laboratories.html</loc>
+    <loc>https://zac10ck.github.io/medas-website/blog/emr-vs-ehr-differences.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Case Studies Section -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/case-studies/</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/case-studies/aster-healthcare.html</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://zac10ck.github.io/medas-website/solutions/pharmacies.html</loc>
+    <loc>https://zac10ck.github.io/medas-website/case-studies/nmc-healthcare.html</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/case-studies/thumbay-group.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Solution Finder Quiz -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/solution-finder.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/privacy-policy.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/terms-of-service.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

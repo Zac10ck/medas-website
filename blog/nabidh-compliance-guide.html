@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo/medas-logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/logo/medas-logo.png">
+  <meta name="theme-color" content="#0F4C81">
+  <meta name="description" content="Complete guide to NABIDH compliance for healthcare providers in Dubai. Learn about requirements, implementation steps, and how to achieve certification.">
+  <meta name="keywords" content="NABIDH compliance, Dubai health authority, healthcare EMR requirements, DHA regulations, health information exchange Dubai">
+  <meta name="author" content="MEDAS Solutions">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html">
+
+  <title>Complete Guide to NABIDH Compliance | MEDAS Blog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/medas-logo.png" alt="MEDAS Solutions" class="logo-image">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item has-dropdown">
+            <a href="../solutions/index.html" class="nav-link">Solutions</a>
+            <ul class="dropdown">
+              <li><a href="../solutions/his.html">Hospital Information System</a></li>
+              <li><a href="../solutions/emr.html">Electronic Medical Records</a></li>
+              <li><a href="../solutions/lims.html">Laboratory Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="../products/index.html" class="nav-link">Products</a>
+            <ul class="dropdown">
+              <li><a href="../products/e-clinic.html">E-Clinic</a></li>
+              <li><a href="../products/hims.html">HIMS</a></li>
+              <li><a href="../products/e-lab.html">E-Lab</a></li>
+              <li><a href="../products/telemedicine.html">Telemedicine</a></li>
+              <li><a href="../products/e-pharma.html">E-Pharma</a></li>
+              <li><a href="../products/e-veterinary.html">E-Veterinary</a></li>
+              <li><a href="../products/mobile-app.html">Mobile App</a></li>
+              <li><a href="../products/accre-health.html">AccreHealth</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="../case-studies/index.html" class="nav-link active">Resources</a>
+            <ul class="dropdown">
+              <li><a href="../case-studies/index.html">Case Studies</a></li>
+              <li><a href="index.html">Blog</a></li>
+              <li><a href="../solution-finder.html">Solution Finder</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../services/index.html" class="nav-link">Services</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="../about/index.html" class="nav-link">About</a>
+            <ul class="dropdown">
+              <li><a href="../about/index.html">Company</a></li>
+              <li><a href="../about/team.html">Our Team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../contact/index.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="language-switcher">
+            <span class="lang-btn active">
+              <img src="https://flagcdn.com/w20/gb.png" alt="English">
+              EN
+            </span>
+            <a href="../ar/index.html" class="lang-btn">
+              <img src="https://flagcdn.com/w20/sa.png" alt="العربية">
+              عربي
+            </a>
+          </div>
+          <a href="../contact/index.html" class="btn btn-primary">Request Demo</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-menu">
+      <li><a href="../solutions/index.html">Solutions</a></li>
+      <li><a href="../products/index.html">Products</a></li>
+      <li><a href="../case-studies/index.html">Case Studies</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../services/index.html">Services</a></li>
+      <li><a href="../about/index.html">About</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+      <li>
+        <div class="language-switcher" style="justify-content: center; margin: 1rem 0; border: none;">
+          <span class="lang-btn active">EN</span>
+          <a href="../ar/index.html" class="lang-btn">عربي</a>
+        </div>
+      </li>
+      <li><a href="../contact/index.html" class="btn btn-primary">Request Demo</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="../index.html"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">Blog</span></a>
+            <meta itemprop="position" content="2" />
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">NABIDH Compliance Guide</span>
+            <meta itemprop="position" content="3" />
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Article -->
+    <article class="blog-article" itemscope itemtype="https://schema.org/BlogPosting">
+      <header class="article-header">
+        <div class="container">
+          <div class="article-header-content" data-animate>
+            <span class="blog-category">Compliance</span>
+            <h1 itemprop="headline">Complete Guide to NABIDH Compliance for Healthcare Providers</h1>
+            <div class="article-meta">
+              <div class="author-info">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop" alt="Author" class="author-avatar">
+                <div>
+                  <span class="author-name" itemprop="author">MEDAS Editorial Team</span>
+                  <span class="publish-date" itemprop="datePublished">November 2024</span>
+                </div>
+              </div>
+              <div class="article-stats">
+                <span class="reading-time">6 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Featured Image -->
+      <div class="article-featured-image">
+        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=1400&h=600&fit=crop" alt="NABIDH Compliance" itemprop="image">
+      </div>
+
+      <!-- Article Content -->
+      <div class="article-content">
+        <div class="container">
+          <div class="article-body" itemprop="articleBody">
+
+            <p class="lead">NABIDH (National Backbone for Integrated Dubai Health) is Dubai Health Authority's health information exchange platform that connects all healthcare providers in Dubai. Understanding and achieving NABIDH compliance is essential for any healthcare facility operating in the emirate.</p>
+
+            <h2>What is NABIDH?</h2>
+
+            <p>NABIDH is Dubai's unified health information exchange (HIE) platform that creates a single, comprehensive electronic health record for every patient in Dubai. Launched by the Dubai Health Authority (DHA), NABIDH aims to:</p>
+
+            <ul>
+              <li>Enable seamless sharing of patient health information across all healthcare facilities</li>
+              <li>Reduce duplicate testing and medical errors</li>
+              <li>Improve care coordination and patient outcomes</li>
+              <li>Support evidence-based healthcare decisions</li>
+              <li>Enhance public health surveillance and research</li>
+            </ul>
+
+            <h2>Who Must Comply with NABIDH?</h2>
+
+            <p>NABIDH compliance is mandatory for all DHA-licensed healthcare facilities in Dubai, including:</p>
+
+            <ul>
+              <li>Hospitals (private and public)</li>
+              <li>Clinics and polyclinics</li>
+              <li>Diagnostic laboratories</li>
+              <li>Pharmacies</li>
+              <li>Dental clinics</li>
+              <li>Home healthcare providers</li>
+              <li>Medical fitness centers</li>
+            </ul>
+
+            <div class="article-callout warning">
+              <h4>Important Deadline</h4>
+              <p>Healthcare facilities that fail to achieve NABIDH compliance may face penalties, including suspension of DHA license renewal. Ensure your facility is compliant to avoid operational disruptions.</p>
+            </div>
+
+            <h2>Key NABIDH Requirements</h2>
+
+            <h3>1. Electronic Medical Records (EMR)</h3>
+
+            <p>Facilities must implement a certified EMR system capable of:</p>
+
+            <ul>
+              <li>Capturing all required clinical data elements</li>
+              <li>Supporting HL7 FHIR messaging standards</li>
+              <li>Maintaining data integrity and security</li>
+              <li>Enabling real-time or near-real-time data exchange</li>
+            </ul>
+
+            <h3>2. Data Categories</h3>
+
+            <p>NABIDH requires exchange of specific health data categories:</p>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Data Elements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Patient Demographics</td>
+                  <td>Emirates ID, name, date of birth, gender, nationality, contact information</td>
+                </tr>
+                <tr>
+                  <td>Encounters</td>
+                  <td>Visit type, date/time, facility, provider, diagnosis codes (ICD-10)</td>
+                </tr>
+                <tr>
+                  <td>Clinical Data</td>
+                  <td>Vital signs, allergies, medications, lab results, radiology reports</td>
+                </tr>
+                <tr>
+                  <td>Prescriptions</td>
+                  <td>Medication details, dosage, dispensing information</td>
+                </tr>
+                <tr>
+                  <td>Laboratory</td>
+                  <td>Test orders, results, reference ranges, interpretation</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>3. Technical Standards</h3>
+
+            <p>NABIDH compliance requires adherence to specific technical standards:</p>
+
+            <ul>
+              <li><strong>HL7 FHIR:</strong> Primary messaging standard for data exchange</li>
+              <li><strong>ICD-10:</strong> International Classification of Diseases for diagnosis coding</li>
+              <li><strong>CPT/HCPCS:</strong> Procedure coding standards</li>
+              <li><strong>SNOMED-CT:</strong> Clinical terminology (recommended)</li>
+              <li><strong>SSL/TLS:</strong> Encryption for data in transit</li>
+            </ul>
+
+            <h2>Steps to Achieve NABIDH Compliance</h2>
+
+            <h3>Step 1: Gap Assessment</h3>
+
+            <p>Begin with a comprehensive assessment of your current systems:</p>
+
+            <ul>
+              <li>Evaluate existing EMR capabilities against NABIDH requirements</li>
+              <li>Identify data capture gaps</li>
+              <li>Assess technical infrastructure readiness</li>
+              <li>Review workflow processes for data quality</li>
+            </ul>
+
+            <h3>Step 2: EMR Selection or Upgrade</h3>
+
+            <p>If your current system doesn't meet requirements, select a NABIDH-certified EMR:</p>
+
+            <ul>
+              <li>Verify DHA certification of the EMR vendor</li>
+              <li>Confirm NABIDH-compliant data capture capabilities</li>
+              <li>Ensure integration options for existing systems</li>
+              <li>Plan for implementation timeline</li>
+            </ul>
+
+            <div class="article-callout success">
+              <h4>MEDAS HIMS is NABIDH Certified</h4>
+              <p>MEDAS Hospital Information Management System is fully certified for NABIDH compliance, with built-in integration capabilities and comprehensive data capture features.</p>
+              <a href="../products/hims.html" class="btn btn-outline">Learn About MEDAS HIMS</a>
+            </div>
+
+            <h3>Step 3: Integration Development</h3>
+
+            <p>Develop the technical integration with NABIDH:</p>
+
+            <ul>
+              <li>Configure HL7 FHIR messaging endpoints</li>
+              <li>Map internal data fields to NABIDH specifications</li>
+              <li>Implement patient matching algorithms (Emirates ID-based)</li>
+              <li>Set up secure authentication and encryption</li>
+            </ul>
+
+            <h3>Step 4: Testing and Validation</h3>
+
+            <p>Thorough testing is critical before go-live:</p>
+
+            <ul>
+              <li>Connect to NABIDH sandbox environment</li>
+              <li>Submit test transactions for all data categories</li>
+              <li>Validate data quality and formatting</li>
+              <li>Resolve any rejection errors</li>
+              <li>Conduct end-to-end integration testing</li>
+            </ul>
+
+            <h3>Step 5: Certification and Go-Live</h3>
+
+            <p>Complete the formal certification process:</p>
+
+            <ul>
+              <li>Apply for NABIDH certification through DHA portal</li>
+              <li>Schedule DHA inspection if required</li>
+              <li>Demonstrate system capabilities to DHA assessors</li>
+              <li>Receive certification approval</li>
+              <li>Switch to production environment</li>
+            </ul>
+
+            <h2>Common Challenges and Solutions</h2>
+
+            <h3>Data Quality Issues</h3>
+
+            <p><strong>Challenge:</strong> Incomplete or incorrectly formatted data causing transaction rejections.</p>
+            <p><strong>Solution:</strong> Implement data validation rules at the point of entry, train staff on accurate data capture, and use EMR systems with built-in NABIDH validation.</p>
+
+            <h3>Patient Matching</h3>
+
+            <p><strong>Challenge:</strong> Difficulty matching patients without Emirates ID.</p>
+            <p><strong>Solution:</strong> Capture Emirates ID whenever possible, implement secondary matching algorithms using name and date of birth, maintain clean master patient index.</p>
+
+            <h3>Real-time Integration</h3>
+
+            <p><strong>Challenge:</strong> Network or system issues disrupting real-time data exchange.</p>
+            <p><strong>Solution:</strong> Implement store-and-forward capabilities, set up monitoring and alerting, maintain backup connectivity options.</p>
+
+            <h2>Maintaining Ongoing Compliance</h2>
+
+            <p>NABIDH compliance is not a one-time achievement. Maintain compliance through:</p>
+
+            <ul>
+              <li><strong>Continuous Monitoring:</strong> Track submission success rates and data quality metrics</li>
+              <li><strong>Staff Training:</strong> Regular training on data capture requirements</li>
+              <li><strong>System Updates:</strong> Keep EMR software updated with latest NABIDH specifications</li>
+              <li><strong>Audit Readiness:</strong> Maintain documentation and logs for DHA inspections</li>
+            </ul>
+
+            <div class="article-callout">
+              <h4>Need Help with NABIDH Compliance?</h4>
+              <p>MEDAS has helped hundreds of healthcare facilities achieve and maintain NABIDH compliance. Our team of experts can guide you through every step of the process.</p>
+              <a href="../contact/index.html" class="btn btn-primary">Get Expert Help</a>
+            </div>
+
+          </div>
+
+          <!-- Author Bio -->
+          <div class="author-bio">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop" alt="MEDAS Editorial Team" class="author-bio-avatar">
+            <div class="author-bio-content">
+              <h4>MEDAS Editorial Team</h4>
+              <p>Our compliance experts have helped over 500 healthcare facilities in the UAE achieve regulatory compliance, including NABIDH certification.</p>
+            </div>
+          </div>
+
+          <!-- Share -->
+          <div class="article-share">
+            <span>Share this article:</span>
+            <div class="share-buttons">
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html" target="_blank" class="share-btn linkedin" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://wa.me/?text=NABIDH Compliance Guide https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html" target="_blank" class="share-btn whatsapp" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <h2>Related Articles</h2>
+        </div>
+        <div class="blog-grid compact" data-animate>
+          <article class="blog-card">
+            <div class="blog-card-image">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop" alt="Digital Transformation">
+              <span class="blog-category">Industry</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="healthcare-digital-transformation-gcc.html">Healthcare Digital Transformation in the GCC</a></h3>
+              <p>Explore trends shaping healthcare technology in the region.</p>
+              <a href="healthcare-digital-transformation-gcc.html" class="blog-read-more">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-image">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop" alt="EMR vs EHR">
+              <span class="blog-category">Technology</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="emr-vs-ehr-differences.html">EMR vs EHR: Key Differences</a></h3>
+              <p>Understanding the distinction for better system selection.</p>
+              <a href="emr-vs-ehr-differences.html" class="blog-read-more">Read More &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content" data-animate>
+          <h2>Get NABIDH Certified with MEDAS</h2>
+          <p>Our experts will guide you through the compliance process.</p>
+          <a href="../contact/index.html" class="btn btn-white">Request Consultation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../assets/images/medas-logo.png" alt="MEDAS Solutions" class="logo-image">
+          </a>
+          <p>Enterprise healthcare software solutions trusted by 500+ organizations across the GCC.</p>
+          <div class="footer-gcc-flags">
+            <img src="https://flagcdn.com/w40/ae.png" alt="UAE">
+            <img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia">
+            <img src="https://flagcdn.com/w40/qa.png" alt="Qatar">
+            <img src="https://flagcdn.com/w40/kw.png" alt="Kuwait">
+            <img src="https://flagcdn.com/w40/bh.png" alt="Bahrain">
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="../solutions/his.html">Hospital Information System</a></li>
+            <li><a href="../solutions/emr.html">Electronic Medical Records</a></li>
+            <li><a href="../solutions/lims.html">Laboratory Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="../case-studies/index.html">Case Studies</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../solution-finder.html">Solution Finder</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+            <li>info@medassolutions.com</li>
+            <li>+971 4 259 8651</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MEDAS Solutions. All rights reserved. | Offices in UAE, Saudi Arabia, Qatar, Kuwait, Bahrain & India</p>
+        <div class="footer-legal">
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../terms-of-service.html">Terms of Service</a>
+          <a href="../ar/index.html">العربية</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-contact">
+    <a href="tel:+97142598651" class="floating-contact-btn phone" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a href="https://wa.me/97142598651" target="_blank" class="floating-contact-btn whatsapp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

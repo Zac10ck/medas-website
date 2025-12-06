@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initAnimations();
   initForms();
+  initCookieConsent();
+  initLanguageSwitcher();
 });
 
 /**
@@ -199,3 +201,93 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+/**
+ * Cookie Consent Banner
+ */
+function initCookieConsent() {
+  const COOKIE_CONSENT_KEY = 'medas_cookie_consent';
+
+  // Check if user already made a choice
+  const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
+  if (consent) return;
+
+  // Create cookie banner if it doesn't exist
+  if (!document.querySelector('.cookie-banner')) {
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.innerHTML = `
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <p>We use cookies to enhance your browsing experience, analyze site traffic, and personalize content.
+          By clicking "Accept All", you consent to our use of cookies.
+          <a href="privacy-policy.html">Learn more</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button class="cookie-btn cookie-btn-decline" data-action="decline">Decline</button>
+          <button class="cookie-btn cookie-btn-accept" data-action="accept">Accept All</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(banner);
+  }
+
+  const banner = document.querySelector('.cookie-banner');
+
+  // Show banner after a short delay
+  setTimeout(() => {
+    banner.classList.add('show');
+  }, 1000);
+
+  // Handle button clicks
+  banner.addEventListener('click', (e) => {
+    const action = e.target.dataset.action;
+    if (!action) return;
+
+    if (action === 'accept') {
+      localStorage.setItem(COOKIE_CONSENT_KEY, 'accepted');
+      // Enable analytics and marketing cookies here if needed
+    } else if (action === 'decline') {
+      localStorage.setItem(COOKIE_CONSENT_KEY, 'declined');
+      // Disable non-essential cookies here if needed
+    }
+
+    // Hide banner with animation
+    banner.classList.remove('show');
+    setTimeout(() => {
+      banner.remove();
+    }, 400);
+  });
+}
+
+/**
+ * Language Switcher
+ */
+function initLanguageSwitcher() {
+  const LANG_PREF_KEY = 'medas_language';
+
+  // Store language preference when clicking language links
+  document.querySelectorAll('.lang-btn[href]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const href = btn.getAttribute('href');
+      const lang = href.includes('/ar/') ? 'ar' : 'en';
+      localStorage.setItem(LANG_PREF_KEY, lang);
+    });
+  });
+
+  // Check for browser language on first visit (optional auto-redirect)
+  // Uncomment if you want automatic language detection
+  /*
+  const savedLang = localStorage.getItem(LANG_PREF_KEY);
+  if (!savedLang) {
+    const browserLang = navigator.language || navigator.userLanguage;
+    if (browserLang.startsWith('ar')) {
+      const isArabicPage = document.documentElement.lang === 'ar';
+      if (!isArabicPage) {
+        localStorage.setItem(LANG_PREF_KEY, 'ar');
+        window.location.href = 'ar/index.html';
+      }
+    }
+  }
+  */
+}
