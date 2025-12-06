@@ -67,12 +67,20 @@ function initAnimations() {
   const elements = document.querySelectorAll('[data-animate]');
   if (!elements.length) return;
 
+  // Add index to grid items for staggered animations
+  document.querySelectorAll('.integration-grid, .gcc-offices-grid, .regions-grid, .offices-grid').forEach(grid => {
+    grid.querySelectorAll('[data-animate]').forEach((item, index) => {
+      item.style.setProperty('--item-index', index);
+    });
+  });
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const delay = entry.target.dataset.delay || 0;
         setTimeout(() => {
-          entry.target.classList.add('visible');
+          entry.target.classList.add('animate-in');
+          entry.target.classList.add('visible'); // Keep for backwards compatibility
         }, delay);
         observer.unobserve(entry.target);
       }
@@ -83,6 +91,52 @@ function initAnimations() {
   });
 
   elements.forEach(el => observer.observe(el));
+
+  // Counter animation for stats
+  initCounterAnimation();
+}
+
+/**
+ * Animated counter for statistics
+ */
+function initCounterAnimation() {
+  const counters = document.querySelectorAll('.stat-number');
+  if (!counters.length) return;
+
+  const animateCounter = (el) => {
+    const target = el.dataset.count || el.textContent.replace(/[^0-9.]/g, '');
+    const suffix = el.textContent.replace(/[0-9.]/g, '');
+    const duration = 2000;
+    const start = 0;
+    const increment = target / (duration / 16);
+    let current = start;
+
+    const updateCounter = () => {
+      current += increment;
+      if (current < target) {
+        el.textContent = Math.floor(current) + suffix;
+        requestAnimationFrame(updateCounter);
+      } else {
+        el.textContent = target + suffix;
+      }
+    };
+
+    updateCounter();
+  };
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => {
+    counter.dataset.count = counter.textContent.replace(/[^0-9.]/g, '');
+    counterObserver.observe(counter);
+  });
 }
 
 /**
