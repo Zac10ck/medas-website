@@ -121,41 +121,28 @@
 
   <main>
     <!-- Product Hero -->
-    <section class="product-hero">
+    <section class="product-hero" style="background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #2b6cb0 100%); position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; right: 0; width: 60%; height: 100%; opacity: 0.08;">
+        <svg viewBox="0 0 400 400" style="width: 100%; height: 100%;">
+          <circle cx="200" cy="200" r="180" fill="none" stroke="white" stroke-width="1"/>
+          <circle cx="200" cy="200" r="140" fill="none" stroke="white" stroke-width="1"/>
+          <circle cx="200" cy="200" r="100" fill="none" stroke="white" stroke-width="1"/>
+          <circle cx="200" cy="200" r="60" fill="none" stroke="white" stroke-width="1"/>
+        </svg>
+      </div>
       <div class="container">
         <div class="product-hero-grid">
           <div class="product-hero-content" data-animate>
-            <span class="badge">Hospital Management</span>
-            <h1>HIMS</h1>
-            <p class="lead">A complete web-based ERP software solution for small to large-level hospitals. Deliver enhanced patient care with operational efficiency and real-time data sharing across all departments.</p>
+            <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">Hospital Management</span>
+            <h1 style="color: white;">HIMS</h1>
+            <p class="lead" style="color: rgba(255,255,255,0.9);">A complete web-based ERP software solution for small to large-level hospitals. Deliver enhanced patient care with operational efficiency and real-time data sharing across all departments.</p>
             <div class="hero-actions">
-              <a href="../contact/index.html" class="btn btn-primary btn-lg">Schedule Demo</a>
-              <a href="#features" class="btn btn-outline btn-lg">View Features</a>
+              <a href="../contact/index.html" class="btn btn-white btn-lg">Schedule Demo</a>
+              <a href="#features" class="btn btn-outline btn-lg" style="color: white; border-color: white;">View Features</a>
             </div>
           </div>
           <div class="product-hero-visual" data-animate data-delay="100">
-            <div class="product-mockup">
-              <div class="mockup-header">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-content">
-                <div class="mockup-sidebar">
-                  <div class="mockup-nav-item active"></div>
-                  <div class="mockup-nav-item"></div>
-                  <div class="mockup-nav-item"></div>
-                  <div class="mockup-nav-item"></div>
-                  <div class="mockup-nav-item"></div>
-                </div>
-                <div class="mockup-main">
-                  <div class="mockup-stats-row">
-                    <div class="mockup-stat"></div>
-                    <div class="mockup-stat"></div>
-                    <div class="mockup-stat"></div>
-                  </div>
-                  <div class="mockup-chart"></div>
-                </div>
-              </div>
-            </div>
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=700&q=80" alt="HIMS Hospital Management" style="width: 100%; border-radius: 1rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.4);">
           </div>
         </div>
       </div>
@@ -165,15 +152,25 @@
     <section class="section section-gray">
       <div class="container">
         <div class="benefits-grid">
-          <div class="benefit-item" data-animate>
-            <div class="benefit-number">32+</div>
+          <div class="benefit-item" data-animate style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #2b6cb0, #1a365d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="benefit-number" style="color: #1a365d;">32+</div>
             <div class="benefit-text">
               <h3>Operational Modules</h3>
               <p>Complete hospital management</p>
             </div>
           </div>
-          <div class="benefit-item" data-animate data-delay="100">
-            <div class="benefit-number">24/7</div>
+          <div class="benefit-item" data-animate data-delay="100" style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #2b6cb0, #1a365d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="benefit-number" style="color: #1a365d;">24/7</div>
             <div class="benefit-text">
               <h3>Real-time Data</h3>
               <p>Live operational insights</p>
