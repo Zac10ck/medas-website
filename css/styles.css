@@ -3546,3 +3546,701 @@ p {
   width: 24px;
   height: 24px;
 }
+
+/* =========================================================================
+   LEAD GENERATION & SEO ENHANCEMENT COMPONENTS
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   Floating Contact Button (WhatsApp + Call)
+   ------------------------------------------------------------------------- */
+.floating-contact {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.floating-contact-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.floating-contact-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.floating-contact-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.floating-contact-btn.whatsapp {
+  background: #25D366;
+}
+
+.floating-contact-btn.phone {
+  background: var(--primary);
+}
+
+.floating-contact-btn.whatsapp::before {
+  content: 'Chat with us';
+  position: absolute;
+  right: 68px;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.floating-contact-btn.phone::before {
+  content: 'Call us now';
+  position: absolute;
+  right: 68px;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.floating-contact-btn:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Pulse animation for WhatsApp */
+.floating-contact-btn.whatsapp::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #25D366;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Trust Badges Section
+   ------------------------------------------------------------------------- */
+.trust-badges {
+  background: var(--gray-50);
+  padding: var(--space-12) 0;
+}
+
+.trust-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-6);
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .trust-badges-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.trust-badge-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 50%;
+  margin-bottom: var(--space-3);
+  box-shadow: var(--shadow);
+  color: var(--primary);
+}
+
+.trust-badge-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.trust-badge span {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+/* -------------------------------------------------------------------------
+   Stats Counter Section
+   ------------------------------------------------------------------------- */
+.stats-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  padding: var(--space-16) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-item {
+  text-align: center;
+  color: white;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stat-label {
+  font-size: var(--text-lg);
+  opacity: 0.9;
+}
+
+/* -------------------------------------------------------------------------
+   Client Logo Carousel
+   ------------------------------------------------------------------------- */
+.client-logos {
+  padding: var(--space-12) 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.client-logos h2 {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  color: var(--gray-500);
+  font-size: var(--text-lg);
+  font-weight: 500;
+}
+
+.logo-marquee {
+  display: flex;
+  gap: var(--space-12);
+  animation: marquee 30s linear infinite;
+}
+
+.logo-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.client-logo {
+  flex-shrink: 0;
+  height: 48px;
+  width: auto;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* -------------------------------------------------------------------------
+   FAQ Accordion
+   ------------------------------------------------------------------------- */
+.faq-section {
+  padding: var(--space-16) 0;
+  background: var(--gray-50);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--gray-900);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: var(--gray-50);
+}
+
+.faq-question svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-question svg {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+.faq-answer-content {
+  padding: 0 var(--space-6) var(--space-6);
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+
+/* -------------------------------------------------------------------------
+   Exit Intent Popup
+   ------------------------------------------------------------------------- */
+.exit-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.exit-popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.exit-popup {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  max-width: 500px;
+  width: 90%;
+  padding: var(--space-10);
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.exit-popup-overlay.active .exit-popup {
+  transform: scale(1);
+}
+
+.exit-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gray-100);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.exit-popup-close:hover {
+  background: var(--gray-200);
+}
+
+.exit-popup-close svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-600);
+}
+
+.exit-popup-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-6);
+}
+
+.exit-popup-icon svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.exit-popup h3 {
+  font-size: var(--text-2xl);
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.exit-popup p {
+  text-align: center;
+  color: var(--gray-600);
+  margin-bottom: var(--space-6);
+}
+
+.exit-popup-form {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.exit-popup-form input {
+  flex: 1;
+  padding: var(--space-4);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: var(--text-base);
+  transition: border-color 0.3s ease;
+}
+
+.exit-popup-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.exit-popup-form button {
+  padding: var(--space-4) var(--space-6);
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.exit-popup-form button:hover {
+  background: var(--secondary);
+}
+
+/* -------------------------------------------------------------------------
+   Newsletter Signup (Footer)
+   ------------------------------------------------------------------------- */
+.newsletter-section {
+  background: var(--primary);
+  padding: var(--space-8) 0;
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .newsletter-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.newsletter-text h3 {
+  color: white;
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2);
+}
+
+.newsletter-text p {
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--space-3);
+}
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.newsletter-form input {
+  padding: var(--space-4) var(--space-5);
+  border: none;
+  border-radius: var(--radius);
+  font-size: var(--text-base);
+  min-width: 280px;
+}
+
+@media (max-width: 480px) {
+  .newsletter-form input {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.newsletter-form button {
+  padding: var(--space-4) var(--space-6);
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+  background: #e6a800;
+  transform: translateY(-2px);
+}
+
+/* -------------------------------------------------------------------------
+   Breadcrumb Navigation
+   ------------------------------------------------------------------------- */
+.breadcrumb {
+  background: var(--gray-50);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  list-style: none;
+  font-size: var(--text-sm);
+}
+
+.breadcrumb-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.breadcrumb-list li a {
+  color: var(--gray-500);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-list li a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb-list li span {
+  color: var(--gray-900);
+  font-weight: 500;
+}
+
+.breadcrumb-list svg {
+  width: 16px;
+  height: 16px;
+  color: var(--gray-400);
+}
+
+/* -------------------------------------------------------------------------
+   Product Comparison Table
+   ------------------------------------------------------------------------- */
+.comparison-section {
+  padding: var(--space-16) 0;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: var(--space-4) var(--space-5);
+  text-align: center;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.comparison-table th {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+}
+
+.comparison-table th:first-child {
+  text-align: left;
+  background: var(--secondary);
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: var(--gray-50);
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(15, 76, 129, 0.05);
+}
+
+.comparison-check {
+  color: #22c55e;
+}
+
+.comparison-x {
+  color: var(--gray-400);
+}
+
+.comparison-table .btn {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+/* -------------------------------------------------------------------------
+   Thank You Page
+   ------------------------------------------------------------------------- */
+.thank-you-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-16) 0;
+}
+
+.thank-you-icon {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-8);
+}
+
+.thank-you-icon svg {
+  width: 60px;
+  height: 60px;
+  color: white;
+}
+
+.thank-you-section h1 {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-4);
+}
+
+.thank-you-section p {
+  font-size: var(--text-xl);
+  color: var(--gray-600);
+  max-width: 500px;
+  margin: 0 auto var(--space-8);
+}

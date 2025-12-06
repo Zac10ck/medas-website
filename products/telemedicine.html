@@ -114,6 +114,28 @@
   </div>
 
   <main>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="../index.html"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">Products</span></a>
+            <meta itemprop="position" content="2" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">Telemedicine</span>
+            <meta itemprop="position" content="3" />
+          </li>
+        </ol>
+      </div>
+    </nav>
+
     <!-- Product Hero -->
     <section class="product-hero" style="background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 50%, #8b5cf6 100%); position: relative; overflow: hidden;">
       <div style="position: absolute; top: -50%; right: -20%; width: 80%; height: 200%; opacity: 0.1;">
@@ -387,6 +409,114 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header center" data-animate>
+          <span class="badge">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about Telemedicine.</p>
+        </div>
+        <div class="faq-list" data-animate>
+          <div class="faq-item">
+            <button class="faq-question">
+              What video quality can we expect for telemedicine consultations?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">Our telemedicine platform delivers HD video quality with adaptive streaming that adjusts to available bandwidth. The system supports 720p to 1080p video resolution, ensuring clear visual communication between doctors and patients. The platform automatically optimizes video quality based on network conditions, and includes features like screen sharing for reviewing medical images or documents, and recording capabilities for documentation purposes when authorized.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How secure are the video consultations and patient data?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">Security is our top priority. All telemedicine consultations use end-to-end encryption (E2E) with AES-256 encryption standards. Patient data is protected according to healthcare privacy regulations including HIPAA and GCC health authority requirements. The platform includes secure authentication, encrypted data transmission, secure cloud storage, automatic session timeout, and complete audit trails for all access to patient information.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can patients access telemedicine services from their mobile devices?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">Yes, our telemedicine solution includes native mobile applications for both iOS and Android platforms. Patients can download the app from the App Store or Google Play, book appointments, conduct video consultations, view prescriptions, access their medical history, and make payments directly from their smartphones or tablets. The mobile apps are optimized for low-bandwidth scenarios and work reliably even with moderate internet connectivity.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Does the telemedicine platform integrate with our existing EMR/HIMS?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">Absolutely. Our telemedicine platform is designed to integrate seamlessly with MEDAS HIMS and other popular EMR systems through standard HL7 interfaces and APIs. The integration allows automatic patient data synchronization, real-time access to medical records during consultations, automatic prescription transfer to pharmacy systems, and consolidated billing. For non-MEDAS systems, we provide API documentation and integration support to ensure smooth connectivity.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What happens if there's a technical issue during a consultation?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">The platform includes built-in redundancy and failover mechanisms. If video connection is lost, the system automatically attempts to reconnect. If the issue persists, both doctor and patient receive notifications with alternative connection options. The platform includes an audio-only fallback option, in-app chat messaging, and the ability to reschedule the appointment. Our 24/7 technical support team is available to assist with any technical issues, and the consultation session data is automatically saved to prevent data loss.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What video quality can we expect for telemedicine consultations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our telemedicine platform delivers HD video quality with adaptive streaming that adjusts to available bandwidth. The system supports 720p to 1080p video resolution, ensuring clear visual communication between doctors and patients. The platform automatically optimizes video quality based on network conditions, and includes features like screen sharing for reviewing medical images or documents, and recording capabilities for documentation purposes when authorized."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How secure are the video consultations and patient data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Security is our top priority. All telemedicine consultations use end-to-end encryption (E2E) with AES-256 encryption standards. Patient data is protected according to healthcare privacy regulations including HIPAA and GCC health authority requirements. The platform includes secure authentication, encrypted data transmission, secure cloud storage, automatic session timeout, and complete audit trails for all access to patient information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can patients access telemedicine services from their mobile devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our telemedicine solution includes native mobile applications for both iOS and Android platforms. Patients can download the app from the App Store or Google Play, book appointments, conduct video consultations, view prescriptions, access their medical history, and make payments directly from their smartphones or tablets. The mobile apps are optimized for low-bandwidth scenarios and work reliably even with moderate internet connectivity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the telemedicine platform integrate with our existing EMR/HIMS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our telemedicine platform is designed to integrate seamlessly with MEDAS HIMS and other popular EMR systems through standard HL7 interfaces and APIs. The integration allows automatic patient data synchronization, real-time access to medical records during consultations, automatic prescription transfer to pharmacy systems, and consolidated billing. For non-MEDAS systems, we provide API documentation and integration support to ensure smooth connectivity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if there's a technical issue during a consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The platform includes built-in redundancy and failover mechanisms. If video connection is lost, the system automatically attempts to reconnect. If the issue persists, both doctor and patient receive notifications with alternative connection options. The platform includes an audio-only fallback option, in-app chat messaging, and the ability to reschedule the appointment. Our 24/7 technical support team is available to assist with any technical issues, and the consultation session data is automatically saved to prevent data loss."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- CTA -->
     <section class="section cta-section">
       <div class="container">
@@ -441,6 +571,46 @@
     </div>
   </footer>
 
+  <!-- Floating Contact Buttons -->
+  <div class="floating-contact">
+    <a href="tel:+97142598651" class="floating-contact-btn phone" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+    <a href="https://wa.me/97142598651?text=Hi%20MEDAS%2C%20I%27m%20interested%20in%20your%20healthcare%20solutions" target="_blank" class="floating-contact-btn whatsapp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Exit Intent Popup -->
+  <div class="exit-popup-overlay" id="exitPopup">
+    <div class="exit-popup">
+      <button class="exit-popup-close" onclick="closeExitPopup()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="exit-popup-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+        </svg>
+      </div>
+      <h3>Wait! Get Your Free Assessment</h3>
+      <p>Let us evaluate your healthcare IT needs and show you how MEDAS can transform your operations.</p>
+      <form class="exit-popup-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+        <input type="hidden" name="subject" value="Free Assessment Request">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Get Free Assessment</button>
+      </form>
+    </div>
+  </div>
+
   <script src="../js/main.js"></script>
+  <script src="../js/popup.js"></script>
 </body>
 </html>
