@@ -8001,12 +8001,23 @@ img[loading="lazy"] {
 /* -------------------------------------------------------------------------
    Mobile-Friendly Forms
    ------------------------------------------------------------------------- */
-input,
+input:not([type="checkbox"]):not([type="radio"]),
 textarea,
 select {
   font-size: 16px; /* Prevents iOS zoom on focus */
   -webkit-appearance: none;
   appearance: none;
+}
+
+/* Ensure checkboxes and radios are visible and clickable */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--primary);
 }
 
 input[type="email"],
