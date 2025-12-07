@@ -32,33 +32,178 @@ function initHeader() {
 }
 
 /**
- * Mobile navigation toggle
+ * Enhanced Mobile Navigation with Accessibility and Touch Support
  */
 function initMobileNav() {
   const toggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
+  const closeBtn = document.querySelector('.mobile-nav-close');
+  const backdrop = document.querySelector('.mobile-nav-backdrop');
+  const mobileNavPanel = document.querySelector('.mobile-nav-panel');
 
   if (!toggle || !mobileNav) return;
 
+  let scrollPosition = 0;
+  let touchStartX = 0;
+  let touchCurrentX = 0;
+
+  // Open mobile navigation
+  function openMobileNav() {
+    // Save scroll position
+    scrollPosition = window.pageYOffset;
+
+    // Update ARIA attributes
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Close menu');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    mobileNav.classList.add('active');
+
+    // Prevent body scroll
+    document.body.classList.add('nav-open');
+    document.body.style.top = `-${scrollPosition}px`;
+
+    // Focus first interactive element
+    setTimeout(() => {
+      closeBtn?.focus();
+    }, 300);
+  }
+
+  // Close mobile navigation
+  function closeMobileNav() {
+    // Update ARIA attributes
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    mobileNav.classList.remove('active');
+
+    // Restore body scroll
+    document.body.classList.remove('nav-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
+
+    // Return focus to toggle
+    toggle.focus();
+  }
+
+  // Toggle button click
   toggle.addEventListener('click', () => {
-    mobileNav.classList.toggle('active');
-    document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    if (isOpen) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
   });
 
-  // Close on link click
-  mobileNav.querySelectorAll('a').forEach(link => {
+  // Close button click
+  closeBtn?.addEventListener('click', closeMobileNav);
+
+  // Backdrop click to close
+  backdrop?.addEventListener('click', closeMobileNav);
+
+  // Close on link click (only direct links, not submenu toggles)
+  mobileNav.querySelectorAll('a[href]').forEach(link => {
     link.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-      document.body.style.overflow = '';
+      closeMobileNav();
     });
   });
 
-  // Close on escape
+  // Keyboard navigation
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
-      mobileNav.classList.remove('active');
-      document.body.style.overflow = '';
+    if (!mobileNav.classList.contains('active')) return;
+
+    // Close on Escape
+    if (e.key === 'Escape') {
+      closeMobileNav();
     }
+
+    // Trap focus within mobile nav
+    if (e.key === 'Tab') {
+      const focusableElements = mobileNav.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+
+  // Swipe to close gesture
+  mobileNavPanel?.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  mobileNavPanel?.addEventListener('touchmove', (e) => {
+    if (!mobileNav.classList.contains('active')) return;
+    touchCurrentX = e.touches[0].clientX;
+    const diff = touchCurrentX - touchStartX;
+
+    // Only allow swipe to the right (to close)
+    if (diff > 0) {
+      mobileNavPanel.style.transform = `translateX(${Math.min(diff, 100)}px)`;
+    }
+  }, { passive: true });
+
+  mobileNavPanel?.addEventListener('touchend', () => {
+    const diff = touchCurrentX - touchStartX;
+
+    // If swiped more than 100px to the right, close the nav
+    if (diff > 100) {
+      closeMobileNav();
+    }
+
+    // Reset transform
+    mobileNavPanel.style.transform = '';
+    touchStartX = 0;
+    touchCurrentX = 0;
+  }, { passive: true });
+
+  // Initialize submenu accordion
+  initMobileSubmenu();
+}
+
+/**
+ * Mobile Submenu Accordion
+ */
+function initMobileSubmenu() {
+  const submenuToggles = document.querySelectorAll('.mobile-nav-item.has-submenu > button');
+
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parentItem = toggle.closest('.mobile-nav-item');
+      const submenu = parentItem.querySelector('.mobile-submenu');
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+      // Close all other submenus (accordion behavior)
+      document.querySelectorAll('.mobile-nav-item.has-submenu').forEach(item => {
+        if (item !== parentItem) {
+          item.classList.remove('expanded');
+          const otherToggle = item.querySelector('button[aria-expanded]');
+          const otherSubmenu = item.querySelector('.mobile-submenu');
+          if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+          if (otherSubmenu) otherSubmenu.style.maxHeight = '0';
+        }
+      });
+
+      // Toggle current submenu
+      if (isExpanded) {
+        toggle.setAttribute('aria-expanded', 'false');
+        parentItem.classList.remove('expanded');
+        if (submenu) submenu.style.maxHeight = '0';
+      } else {
+        toggle.setAttribute('aria-expanded', 'true');
+        parentItem.classList.add('expanded');
+        if (submenu) submenu.style.maxHeight = submenu.scrollHeight + 'px';
+      }
+    });
   });
 }
 
@@ -291,3 +436,154 @@ function initLanguageSwitcher() {
   }
   */
 }
+
+/**
+ * Touch-Optimized Interactions
+ */
+function initTouchInteractions() {
+  // Detect touch device
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+  if (isTouchDevice) {
+    document.body.classList.add('touch-device');
+  }
+
+  // Enhanced button feedback
+  document.querySelectorAll('.btn, .feature-card, .gcc-office-card').forEach(element => {
+    element.addEventListener('touchstart', function() {
+      this.classList.add('touch-active');
+    }, { passive: true });
+
+    element.addEventListener('touchend', function() {
+      setTimeout(() => {
+        this.classList.remove('touch-active');
+      }, 150);
+    }, { passive: true });
+
+    element.addEventListener('touchcancel', function() {
+      this.classList.remove('touch-active');
+    }, { passive: true });
+  });
+
+  // Prevent double-tap zoom on buttons
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', (e) => {
+    const now = Date.now();
+    if (now - lastTouchEnd <= 300) {
+      if (e.target.closest('.btn, button, a')) {
+        e.preventDefault();
+      }
+    }
+    lastTouchEnd = now;
+  }, { passive: false });
+
+  // Lazy load images with IntersectionObserver
+  initLazyLoading();
+
+  // Initialize desktop dropdown navigation
+  initDesktopDropdowns();
+}
+
+/**
+ * Lazy Loading for Images
+ */
+function initLazyLoading() {
+  const images = document.querySelectorAll('img[loading="lazy"]');
+
+  if ('loading' in HTMLImageElement.prototype) {
+    // Browser supports native lazy loading
+    images.forEach(img => {
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
+      }
+    });
+  } else {
+    // Fallback to IntersectionObserver
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+          }
+          img.classList.remove('skeleton');
+          imageObserver.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '50px 0px'
+    });
+
+    images.forEach(img => {
+      imageObserver.observe(img);
+    });
+  }
+}
+
+/**
+ * Desktop Dropdown Navigation
+ */
+function initDesktopDropdowns() {
+  const dropdownItems = document.querySelectorAll('.nav-item.has-dropdown');
+
+  dropdownItems.forEach(item => {
+    const link = item.querySelector('.nav-link');
+    const dropdown = item.querySelector('.dropdown');
+
+    if (!link || !dropdown) return;
+
+    // Desktop: hover behavior
+    item.addEventListener('mouseenter', () => {
+      link.setAttribute('aria-expanded', 'true');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      link.setAttribute('aria-expanded', 'false');
+    });
+
+    // Keyboard accessibility
+    link.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const isExpanded = link.getAttribute('aria-expanded') === 'true';
+        link.setAttribute('aria-expanded', !isExpanded);
+      }
+
+      // Arrow down to first dropdown item
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const firstDropdownLink = dropdown.querySelector('a');
+        if (firstDropdownLink) {
+          link.setAttribute('aria-expanded', 'true');
+          firstDropdownLink.focus();
+        }
+      }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!item.contains(e.target)) {
+        link.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+}
+
+/**
+ * Scroll Progress Indicator (optional)
+ */
+function initScrollProgress() {
+  const progressBar = document.querySelector('.scroll-progress');
+  if (!progressBar) return;
+
+  window.addEventListener('scroll', () => {
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (window.scrollY / windowHeight) * 100;
+    progressBar.style.width = `${scrolled}%`;
+  }, { passive: true });
+}
+
+// Initialize touch interactions on load
+document.addEventListener('DOMContentLoaded', () => {
+  initTouchInteractions();
+});
