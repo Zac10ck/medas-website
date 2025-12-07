@@ -1,0 +1,59 @@
+{
+  "name": "MEDAS Solutions - Healthcare Software",
+  "short_name": "MEDAS",
+  "description": "Enterprise healthcare software solutions - Hospital Information Systems, EMR, Laboratory Management trusted by 500+ organizations across GCC.",
+  "start_url": "/medas-website/",
+  "scope": "/medas-website/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F4C81",
+  "orientation": "portrait-primary",
+  "categories": ["business", "medical", "productivity"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "assets/images/logo/medas-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/logo/medas-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "MEDAS Healthcare Solutions Homepage"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Products",
+      "short_name": "Products",
+      "url": "/medas-website/products/",
+      "description": "View our healthcare software products"
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "url": "/medas-website/contact/",
+      "description": "Get in touch with MEDAS"
+    },
+    {
+      "name": "Solutions",
+      "short_name": "Solutions",
+      "url": "/medas-website/solutions/",
+      "description": "Explore healthcare solutions"
+    }
+  ]
+}

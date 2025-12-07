@@ -13,7 +13,468 @@
   <meta name="HandheldFriendly" content="true">
 
   <!-- Favicon -->
-  <li role="none"><a href="solution-finder.html" role="menuitem">Solution Finder</a></li>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/medas-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo/medas-logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/medas-logo.png">
+  <link rel="mask-icon" href="assets/images/favicon.svg" color="#0F4C81">
+  <meta name="theme-color" content="#0F4C81" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A3A64" media="(prefers-color-scheme: dark)">
+  <meta name="msapplication-TileColor" content="#0F4C81">
+  <meta name="msapplication-TileImage" content="assets/images/logo/medas-logo.png">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="MEDAS Solutions - Enterprise healthcare software solutions. Hospital Information Systems, Electronic Medical Records, and Laboratory Management trusted by 500+ healthcare organizations across Middle East, Africa, US, and Europe.">
+  <meta name="keywords" content="MEDAS Solutions, healthcare software, hospital information system, HIS, EMR, EHR, electronic medical records, laboratory information system, LIMS, clinic management software, UAE healthcare, GCC healthcare, medical software, NABIDH, Malaffi, NPHIES, HIPAA compliant, telemedicine, e-clinic, pharmacy management">
+  <meta name="author" content="MEDAS Solutions">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://zac10ck.github.io/medas-website/">
+  <link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/">
+  <link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://zac10ck.github.io/medas-website/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zac10ck.github.io/medas-website/">
+  <meta property="og:title" content="MEDAS Solutions | Enterprise Healthcare Software">
+  <meta property="og:description" content="Comprehensive hospital information systems, electronic medical records, and laboratory management software trusted by healthcare organizations across four continents.">
+  <meta property="og:image" content="https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MEDAS Solutions Healthcare Software">
+  <meta property="og:site_name" content="MEDAS Solutions">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AE">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MEDASSolutions">
+  <meta name="twitter:creator" content="@MEDASSolutions">
+  <meta name="twitter:url" content="https://zac10ck.github.io/medas-website/">
+  <meta name="twitter:title" content="MEDAS Solutions | Enterprise Healthcare Software">
+  <meta name="twitter:description" content="Comprehensive hospital information systems, electronic medical records, and laboratory management software trusted by healthcare organizations across four continents.">
+  <meta name="twitter:image" content="https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png">
+  <meta name="twitter:image:alt" content="MEDAS Solutions Healthcare Software">
+
+  <title>MEDAS Solutions | Enterprise Healthcare Software</title>
+
+  <!-- Structured Data for AI and Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://medassolutions.com/#organization",
+    "name": "MEDAS Solutions",
+    "alternateName": "MEDAS Healthcare Solutions",
+    "url": "https://medassolutions.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png",
+      "width": 200,
+      "height": 65
+    },
+    "image": "https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png",
+    "description": "Enterprise healthcare software solutions provider offering Hospital Information Systems, Electronic Medical Records, Laboratory Information Systems, and Telemedicine platforms for healthcare organizations worldwide.",
+    "foundingDate": "2004",
+    "founder": {
+      "@type": "Person",
+      "name": "MEDAS Founders"
+    },
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "minValue": 200
+    },
+    "areaServed": [
+      {"@type": "Country", "name": "United Arab Emirates"},
+      {"@type": "Country", "name": "Saudi Arabia"},
+      {"@type": "Country", "name": "Qatar"},
+      {"@type": "Country", "name": "Kuwait"},
+      {"@type": "Country", "name": "Bahrain"},
+      {"@type": "Country", "name": "India"},
+      {"@type": "Continent", "name": "Africa"},
+      {"@type": "Continent", "name": "Europe"},
+      {"@type": "Country", "name": "United States"}
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+971-4-259-8651",
+        "contactType": "sales",
+        "email": "info@medassolutions.com",
+        "availableLanguage": ["English", "Arabic"],
+        "areaServed": "AE"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+971-4-259-8651",
+        "contactType": "customer support",
+        "availableLanguage": ["English", "Arabic"],
+        "hoursAvailable": "Mo-Su 00:00-24:00"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Business Bay",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/medas-solutions",
+      "https://twitter.com/MEDASSolutions"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Healthcare Software Products",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "E-Clinic",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web, iOS, Android",
+            "description": "Complete outpatient management solution for clinics and medical centers"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "HIMS",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "description": "Hospital Information Management System for multi-specialty hospitals"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "E-Lab",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "description": "Laboratory Information System for diagnostic centers and hospital labs"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "Telemedicine",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web, iOS, Android",
+            "description": "Virtual care platform for remote consultations"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "E-Pharma",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "description": "Pharmacy management system for retail and hospital pharmacies"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- WebSite Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://medassolutions.com/#website",
+    "url": "https://zac10ck.github.io/medas-website/",
+    "name": "MEDAS Solutions",
+    "description": "Enterprise Healthcare Software Solutions",
+    "publisher": {"@id": "https://medassolutions.com/#organization"},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://zac10ck.github.io/medas-website/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "inLanguage": ["en-US", "ar-AE"]
+  }
+  </script>
+
+  <!-- BreadcrumbList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://zac10ck.github.io/medas-website/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is MEDAS Solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MEDAS Solutions is an enterprise healthcare software provider offering Hospital Information Systems (HIS), Electronic Medical Records (EMR), Laboratory Information Systems (LIMS), and Telemedicine platforms trusted by 500+ healthcare organizations across the Middle East, Africa, US, and Europe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is MEDAS NABIDH and Malaffi compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, MEDAS Solutions is fully compliant with UAE healthcare regulations including NABIDH (Dubai Health Authority) and Malaffi (Abu Dhabi Health Information Exchange), as well as NPHIES for Saudi Arabia, HIPAA for US operations, and GDPR for European clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What regions does MEDAS serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MEDAS Solutions has offices across the GCC including UAE (Dubai, Abu Dhabi), Saudi Arabia (Al Khobar, Riyadh), Qatar, Kuwait, Bahrain, and India. We serve healthcare organizations across 4 continents including the Middle East, Africa, Europe, and the Americas."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- LocalBusiness Schema for GCC Offices -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://medassolutions.com/#localbusiness",
+    "name": "MEDAS Solutions - Dubai",
+    "image": "https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Business Bay",
+      "addressLocality": "Dubai",
+      "addressRegion": "Dubai",
+      "postalCode": "00000",
+      "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.1857,
+      "longitude": 55.2665
+    },
+    "url": "https://medassolutions.com",
+    "telephone": "+971-4-259-8651",
+    "email": "info@medassolutions.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/medas-solutions"
+    ],
+    "areaServed": [
+      {"@type": "Country", "name": "United Arab Emirates"},
+      {"@type": "Country", "name": "Saudi Arabia"},
+      {"@type": "Country", "name": "Qatar"},
+      {"@type": "Country", "name": "Kuwait"},
+      {"@type": "Country", "name": "Bahrain"}
+    ]
+  }
+  </script>
+
+  <!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://medassolutions.com">
+  <link rel="preconnect" href="https://flagcdn.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" as="style">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://api.web3forms.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="assets/images/medas-logo.png" as="image">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" as="style">
+
+  <!-- Fonts with optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="MEDAS Solutions - Home">
+          <img src="assets/images/medas-logo.png" alt="MEDAS Solutions Logo" class="logo-image" width="200" height="65" fetchpriority="high">
+        </a>
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-item has-dropdown" role="none">
+            <a href="solutions/index.html" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Solutions</a>
+            <ul class="dropdown" role="menu" aria-label="Solutions submenu">
+              <li role="none"><a href="solutions/his.html" role="menuitem">Hospital Information System</a></li>
+              <li role="none"><a href="solutions/emr.html" role="menuitem">Electronic Medical Records</a></li>
+              <li role="none"><a href="solutions/lims.html" role="menuitem">Laboratory Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <a href="products/index.html" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Products</a>
+            <ul class="dropdown" role="menu" aria-label="Products submenu">
+              <li role="none"><a href="products/e-clinic.html" role="menuitem">E-Clinic</a></li>
+              <li role="none"><a href="products/hims.html" role="menuitem">HIMS</a></li>
+              <li role="none"><a href="products/e-lab.html" role="menuitem">E-Lab</a></li>
+              <li role="none"><a href="products/telemedicine.html" role="menuitem">Telemedicine</a></li>
+              <li role="none"><a href="products/e-pharma.html" role="menuitem">E-Pharma</a></li>
+              <li role="none"><a href="products/e-veterinary.html" role="menuitem">E-Veterinary</a></li>
+              <li role="none"><a href="products/mobile-app.html" role="menuitem">Mobile App</a></li>
+              <li role="none"><a href="products/accre-health.html" role="menuitem">AccreHealth</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="none"><a href="services/index.html" class="nav-link" role="menuitem">Services</a></li>
+          <li class="nav-item has-dropdown" role="none">
+            <a href="about/index.html" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">About</a>
+            <ul class="dropdown" role="menu" aria-label="About submenu">
+              <li role="none"><a href="about/index.html" role="menuitem">Company</a></li>
+              <li role="none"><a href="about/team.html" role="menuitem">Our Team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <a href="#" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <ul class="dropdown" role="menu" aria-label="Resources submenu">
+              <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
+              <li role="none"><a href="solution-finder.html" role="menuitem">Solution Finder</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="none"><a href="contact/index.html" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="language-switcher" role="group" aria-label="Language selection">
+            <span class="lang-btn active" aria-current="true" aria-label="English (current language)">
+              <img src="https://flagcdn.com/w20/gb.png" alt="" width="20" height="14" aria-hidden="true">
+              EN
+            </span>
+            <a href="ar/index.html" class="lang-btn" aria-label="Switch to Arabic">
+              <img src="https://flagcdn.com/w20/sa.png" alt="" width="20" height="14" aria-hidden="true">
+              عربي
+            </a>
+          </div>
+          <a href="contact/index.html" class="btn btn-primary">Request Demo</a>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation menu" aria-hidden="true">
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+    <nav class="mobile-nav-panel" role="navigation" aria-label="Mobile navigation">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo" aria-label="MEDAS Solutions - Home">
+          <img src="assets/images/medas-logo.png" alt="MEDAS Solutions" class="logo-image" width="150" height="49">
+        </a>
+        <button class="mobile-nav-close" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-menu" role="menu">
+        <li class="mobile-nav-item has-submenu" role="none">
+          <button class="mobile-nav-link" aria-expanded="false" aria-controls="mobile-solutions-menu" role="menuitem">
+            Solutions
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="mobile-submenu" id="mobile-solutions-menu" role="menu" aria-label="Solutions submenu">
+            <li role="none"><a href="solutions/his.html" role="menuitem">Hospital Information System</a></li>
+            <li role="none"><a href="solutions/emr.html" role="menuitem">Electronic Medical Records</a></li>
+            <li role="none"><a href="solutions/lims.html" role="menuitem">Laboratory Management</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item has-submenu" role="none">
+          <button class="mobile-nav-link" aria-expanded="false" aria-controls="mobile-products-menu" role="menuitem">
+            Products
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="mobile-submenu" id="mobile-products-menu" role="menu" aria-label="Products submenu">
+            <li role="none"><a href="products/e-clinic.html" role="menuitem">E-Clinic</a></li>
+            <li role="none"><a href="products/hims.html" role="menuitem">HIMS</a></li>
+            <li role="none"><a href="products/e-lab.html" role="menuitem">E-Lab</a></li>
+            <li role="none"><a href="products/telemedicine.html" role="menuitem">Telemedicine</a></li>
+            <li role="none"><a href="products/e-pharma.html" role="menuitem">E-Pharma</a></li>
+            <li role="none"><a href="products/e-veterinary.html" role="menuitem">E-Veterinary</a></li>
+            <li role="none"><a href="products/mobile-app.html" role="menuitem">Mobile App</a></li>
+            <li role="none"><a href="products/accre-health.html" role="menuitem">AccreHealth</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item" role="none">
+          <a href="services/index.html" class="mobile-nav-link" role="menuitem">Services</a>
+        </li>
+        <li class="mobile-nav-item has-submenu" role="none">
+          <button class="mobile-nav-link" aria-expanded="false" aria-controls="mobile-about-menu" role="menuitem">
+            About
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="mobile-submenu" id="mobile-about-menu" role="menu" aria-label="About submenu">
+            <li role="none"><a href="about/index.html" role="menuitem">Company</a></li>
+            <li role="none"><a href="about/team.html" role="menuitem">Our Team</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item has-submenu" role="none">
+          <button class="mobile-nav-link" aria-expanded="false" aria-controls="mobile-resources-menu" role="menuitem">
+            Resources
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="mobile-submenu" id="mobile-resources-menu" role="menu" aria-label="Resources submenu">
+            <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
+            <li role="none"><a href="solution-finder.html" role="menuitem">Solution Finder</a></li>
           </ul>
         </li>
         <li class="mobile-nav-item" role="none">
