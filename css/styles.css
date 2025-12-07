@@ -3097,6 +3097,536 @@ p {
 }
 
 /* -------------------------------------------------------------------------
+   NEW Contact Page - Stunning Design
+   ------------------------------------------------------------------------- */
+
+/* Contact Hero */
+.contact-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a1628 0%, #0f4c81 50%, #1a365d 100%);
+  padding: var(--space-20) 0;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: floatOrb 20s ease-in-out infinite;
+}
+
+.hero-gradient-orb.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  top: -20%;
+  right: -10%;
+  animation-delay: 0s;
+}
+
+.hero-gradient-orb.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  bottom: -10%;
+  left: -5%;
+  animation-delay: -5s;
+}
+
+.hero-gradient-orb.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  top: 50%;
+  left: 30%;
+  animation-delay: -10s;
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -30px) scale(1.1); }
+  50% { transform: translate(-20px, 20px) scale(0.9); }
+  75% { transform: translate(20px, 30px) scale(1.05); }
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: var(--space-6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulseBadge 2s ease-in-out infinite;
+}
+
+@keyframes pulseBadge {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.contact-hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--space-6);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #22d3ee, #a855f7, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: var(--space-10);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quick Contact Row */
+.quick-contact-row {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quick-contact-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 220px;
+}
+
+.quick-contact-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.quick-contact-card.whatsapp-card:hover {
+  background: rgba(37, 211, 102, 0.3);
+  border-color: #25D366;
+}
+
+.quick-contact-card.phone-card:hover {
+  background: rgba(34, 211, 238, 0.3);
+  border-color: #22d3ee;
+}
+
+.quick-contact-card.email-card:hover {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: #a855f7;
+}
+
+.qc-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.qc-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-card .qc-icon {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.phone-card .qc-icon {
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+}
+
+.email-card .qc-icon {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+}
+
+.qc-content {
+  flex: 1;
+  text-align: left;
+}
+
+.qc-label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.qc-value {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.qc-arrow {
+  font-size: 20px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.quick-contact-card:hover .qc-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* Offices Section */
+.offices-section {
+  position: relative;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  overflow: hidden;
+}
+
+.offices-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(15, 76, 129, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(34, 211, 238, 0.03) 0%, transparent 50%);
+}
+
+.offices-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.offices-subtitle {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+}
+
+.badge-glow {
+  animation: badgeGlow 3s ease-in-out infinite;
+}
+
+@keyframes badgeGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(15, 76, 129, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(15, 76, 129, 0.5); }
+}
+
+/* Office Showcase Cards */
+.offices-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.office-showcase-card {
+  position: relative;
+}
+
+.office-card-inner {
+  background: white;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.office-showcase-card:hover .office-card-inner {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(15, 76, 129, 0.15);
+}
+
+.office-featured .office-card-inner {
+  background: linear-gradient(145deg, #0f4c81 0%, #1a365d 100%);
+  color: white;
+}
+
+.office-card-header {
+  padding: var(--space-6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.office-featured .office-card-header {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.office-flag-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.office-flag-wrapper img {
+  width: 40px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hq-badge, .dev-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+}
+
+.hq-badge {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: white;
+}
+
+.dev-badge {
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  color: white;
+}
+
+.office-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.office-city {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.office-card-body {
+  padding: var(--space-6);
+  flex: 1;
+}
+
+.office-info-item {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.office-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.office-info-item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.office-featured .office-info-item svg {
+  opacity: 0.8;
+}
+
+.office-info-item a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.office-info-item a:hover {
+  opacity: 0.8;
+}
+
+.phone-numbers, .email-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.office-card-actions {
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: var(--space-3);
+}
+
+.office-featured .office-card-actions {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.office-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.office-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.office-btn.whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+}
+
+.office-btn.whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.office-btn.call {
+  background: var(--gray-100);
+  color: var(--gray-700);
+}
+
+.office-featured .office-btn.call {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.office-btn.call:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Global Support Banner */
+.global-support-banner {
+  margin-top: var(--space-12);
+  background: linear-gradient(135deg, #0f4c81 0%, #1a365d 100%);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  color: white;
+}
+
+.gsb-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.gsb-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gsb-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.gsb-pulse {
+  position: absolute;
+  inset: -4px;
+  border: 2px solid rgba(34, 197, 94, 0.5);
+  border-radius: 50%;
+  animation: gsbPulse 2s ease-in-out infinite;
+}
+
+@keyframes gsbPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0; }
+}
+
+.gsb-text {
+  text-align: center;
+}
+
+.gsb-text h4 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.gsb-text p {
+  opacity: 0.8;
+  font-size: 0.875rem;
+}
+
+/* Responsive for Contact Page */
+@media (max-width: 768px) {
+  .contact-hero {
+    min-height: auto;
+    padding: var(--space-16) 0;
+  }
+
+  .quick-contact-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quick-contact-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .offices-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .gsb-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* -------------------------------------------------------------------------
    Premium Contact Page Animations
    ------------------------------------------------------------------------- */
 
