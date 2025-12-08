@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/logo/medas-logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/logo/medas-logo.png">
+  <meta name="theme-color" content="#0F4C81">
+  <meta name="description" content="تواصل مع ميداس سوليوشنز - اطلب عرضاً توضيحياً، احصل على الدعم، أو تواصل مع مكاتبنا في دبي والسعودية والكويت وقطر والبحرين والهند. دعم فني على مدار الساعة.">
+  <meta name="keywords" content="اتصل بميداس, عرض برامج الرعاية الصحية, دعم البرامج الطبية, طلب عرض HIMS, دبي, الخليج">
+  <meta name="author" content="MEDAS Solutions">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zac10ck.github.io/medas-website/ar/contact/">
+  <link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/contact/">
+  <link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/contact/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zac10ck.github.io/medas-website/ar/contact/">
+  <meta property="og:title" content="اتصل بنا | ميداس سوليوشنز">
+  <meta property="og:description" content="اطلب عرضاً توضيحياً أو تواصل مع مكاتبنا في الإمارات والسعودية والكويت وقطر والبحرين والهند.">
+  <meta property="og:image" content="https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png">
+  <meta property="og:locale" content="ar_AE">
+
+  <title>اتصل بنا - ميداس سوليوشنز</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/rtl.css">
+
+  <style>
+    /* Contact Page Specific Styles */
+    .contact-page-hero {
+      padding: 160px 0 80px;
+      background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #f0f9ff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-page-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -20%;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(15, 76, 129, 0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .contact-page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(8, 145, 178, 0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      background: white;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      box-shadow: 0 2px 12px rgba(15, 76, 129, 0.1);
+      margin-bottom: 24px;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+
+    .hero-content h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      color: var(--gray-600);
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .quick-contact-bar {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      background: white;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--gray-700);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .quick-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(15, 76, 129, 0.15);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .quick-link svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .quick-link.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .quick-link.whatsapp:hover {
+      background: #20bd5a;
+      border-color: #25D366;
+      color: white;
+    }
+
+    .contact-main {
+      padding: 80px 0;
+      background: white;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 60px;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    .form-section {
+      background: white;
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--gray-100);
+    }
+
+    .form-section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+      color: var(--gray-900);
+    }
+
+    .form-section > p {
+      color: var(--gray-500);
+      margin-bottom: 32px;
+      font-size: 1rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .form-section {
+        padding: 32px 24px;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 14px 18px;
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: inherit;
+      transition: all 0.2s ease;
+      background: var(--gray-50);
+      color: var(--gray-900);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: white;
+      box-shadow: 0 0 0 4px rgba(15, 76, 129, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: left 14px center;
+      background-size: 18px;
+      padding-left: 48px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .checkbox-item {
+      position: relative;
+    }
+
+    .checkbox-item input {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .checkbox-item label {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 18px;
+      background: var(--gray-50);
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray-600);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .checkbox-item input:checked + label {
+      background: rgba(15, 76, 129, 0.08);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .checkbox-item label:hover {
+      border-color: var(--primary);
+    }
+
+    .submit-btn {
+      padding: 18px 32px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(15, 76, 129, 0.35);
+    }
+
+    .submit-btn svg {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .submit-btn:hover svg {
+      transform: translateX(-4px);
+    }
+
+    .form-note {
+      font-size: 13px;
+      color: var(--gray-500);
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--gray-100);
+    }
+
+    .info-card h3 {
+      font-size: 1.1rem;
+      color: var(--gray-900);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .info-card h3 svg {
+      width: 22px;
+      height: 22px;
+      color: var(--primary);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .contact-item:first-of-type {
+      padding-top: 0;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, rgba(15, 76, 129, 0.1) 0%, rgba(8, 145, 178, 0.1) 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--primary);
+    }
+
+    .contact-item-content {
+      flex: 1;
+    }
+
+    .contact-item-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--gray-500);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .contact-item-value {
+      font-size: 15px;
+      color: var(--gray-800);
+      font-weight: 500;
+    }
+
+    .contact-item-value a {
+      color: var(--gray-800);
+      transition: color 0.2s ease;
+    }
+
+    .contact-item-value a:hover {
+      color: var(--primary);
+    }
+
+    .support-card {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      border: none;
+    }
+
+    .support-card h3 {
+      color: white;
+    }
+
+    .support-card h3 svg {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .support-card p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .support-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .support-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+
+    .support-link:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateX(-4px);
+    }
+
+    .support-link svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .offices-section {
+      padding: 80px 0;
+      background: var(--gray-50);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+
+    .section-header .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(15, 76, 129, 0.1);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+    }
+
+    .offices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .offices-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .office-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--gray-100);
+      transition: all 0.3s ease;
+    }
+
+    .office-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+      border-color: var(--primary);
+    }
+
+    .office-card.featured {
+      border: 2px solid var(--primary);
+      position: relative;
+    }
+
+    .office-card.featured::before {
+      content: 'المقر الرئيسي';
+      position: absolute;
+      top: -12px;
+      right: 24px;
+      padding: 4px 12px;
+      background: var(--primary);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+
+    .office-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .office-flag {
+      width: 48px;
+      height: 36px;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .office-title h4 {
+      font-size: 1.1rem;
+      color: var(--gray-900);
+      margin-bottom: 2px;
+    }
+
+    .office-title span {
+      font-size: 14px;
+      color: var(--gray-500);
+    }
+
+    .office-details {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .office-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--gray-600);
+      line-height: 1.5;
+    }
+
+    .office-detail svg {
+      width: 18px;
+      height: 18px;
+      color: var(--gray-400);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .office-detail a {
+      color: var(--gray-700);
+      font-weight: 500;
+    }
+
+    .office-detail a:hover {
+      color: var(--primary);
+    }
+
+    .office-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-100);
+    }
+
+    .office-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .office-btn.call {
+      background: var(--gray-100);
+      color: var(--gray-700);
+    }
+
+    .office-btn.call:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .office-btn.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .office-btn.whatsapp:hover {
+      background: #20bd5a;
+    }
+
+    .office-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .map-section {
+      padding: 80px 0;
+      background: white;
+    }
+
+    .map-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--gray-200);
+    }
+
+    .map-container iframe {
+      display: block;
+      width: 100%;
+      height: 450px;
+    }
+
+    .cta-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: white;
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .cta-btn.primary {
+      background: white;
+      color: var(--primary);
+    }
+
+    .cta-btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-btn.outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .cta-btn.outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    .cta-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 100;
+    }
+
+    .floating-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-btn.phone {
+      background: var(--primary);
+      color: white;
+    }
+
+    .floating-btn.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .floating-btn svg {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../index.html" class="logo">
+          <img src="../../assets/images/medas-logo.png" alt="ميداس سوليوشنز" class="logo-image">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item has-dropdown">
+            <a href="../solutions/index.html" class="nav-link">الحلول</a>
+            <ul class="dropdown">
+              <li><a href="../solutions/his.html">نظام معلومات المستشفيات</a></li>
+              <li><a href="../solutions/emr.html">السجلات الطبية الإلكترونية</a></li>
+              <li><a href="../solutions/lims.html">إدارة المختبرات</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="../products/index.html" class="nav-link">المنتجات</a>
+            <ul class="dropdown">
+              <li><a href="../products/e-clinic.html">إي-كلينيك</a></li>
+              <li><a href="../products/hims.html">نظام المستشفيات</a></li>
+              <li><a href="../products/e-lab.html">إي-لاب</a></li>
+              <li><a href="../products/telemedicine.html">الطب عن بُعد</a></li>
+              <li><a href="../products/e-pharma.html">إي-فارما</a></li>
+              <li><a href="../products/accre-health.html">أكري هيلث</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../services/index.html" class="nav-link">الخدمات</a></li>
+          <li class="nav-item"><a href="../about/index.html" class="nav-link">من نحن</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active">اتصل بنا</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="language-switcher">
+            <a href="../../contact/index.html" class="lang-btn">
+              <img src="https://flagcdn.com/w20/gb.png" alt="English">
+              EN
+            </a>
+            <span class="lang-btn active">
+              <img src="https://flagcdn.com/w20/sa.png" alt="العربية">
+              عربي
+            </span>
+          </div>
+          <a href="#contact-form" class="btn btn-primary">طلب عرض</a>
+        </div>
+        <button class="menu-toggle" aria-label="القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-menu">
+      <li><a href="../solutions/index.html">الحلول</a></li>
+      <li><a href="../products/index.html">المنتجات</a></li>
+      <li><a href="../services/index.html">الخدمات</a></li>
+      <li><a href="../about/index.html">من نحن</a></li>
+      <li><a href="index.html">اتصل بنا</a></li>
+      <li><a href="#contact-form" class="btn btn-primary">طلب عرض</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="contact-page-hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">متاحون على مدار الساعة</div>
+          <h1>تواصل مع <span>ميداس</span></h1>
+          <p>تواصل مع خبراء تكنولوجيا الرعاية الصحية لدينا. نحن هنا لمساعدتك في تحويل منشأتك الطبية بحلول برمجية مبتكرة.</p>
+
+          <div class="quick-contact-bar">
+            <a href="tel:+971565463880" class="quick-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              +971 56 546 3880
+            </a>
+            <a href="mailto:sales@medassolutions.com" class="quick-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              sales@medassolutions.com
+            </a>
+            <a href="https://wa.me/971508627642" class="quick-link whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main" id="contact-form">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Contact Form -->
+          <div class="form-section">
+            <h2>طلب عرض توضيحي</h2>
+            <p>املأ النموذج أدناه وسيتواصل معك فريقنا خلال 24 ساعة.</p>
+
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="089d85af-ec3a-4314-a0ad-ad745697bca5">
+              <input type="hidden" name="subject" value="طلب عرض جديد من موقع ميداس">
+              <input type="hidden" name="from_name" value="MEDAS Website Arabic">
+              <input type="hidden" name="redirect" value="https://zac10ck.github.io/medas-website/ar/contact/thank-you.html">
+              <input type="checkbox" name="botcheck" style="display: none;">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">الاسم الأول *</label>
+                  <input type="text" id="firstName" name="firstName" required placeholder="أحمد">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">اسم العائلة *</label>
+                  <input type="text" id="lastName" name="lastName" required placeholder="محمد">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني للعمل *</label>
+                <input type="email" id="email" name="email" required placeholder="ahmed@company.com">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">رقم الهاتف</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX">
+                </div>
+                <div class="form-group">
+                  <label for="organization">المؤسسة *</label>
+                  <input type="text" id="organization" name="organization" required placeholder="اسم المستشفى / العيادة">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="role">منصبك</label>
+                  <select id="role" name="role">
+                    <option value="">اختر منصبك</option>
+                    <option value="cio">مدير تقنية المعلومات</option>
+                    <option value="cmo">المدير الطبي</option>
+                    <option value="cfo">المدير المالي</option>
+                    <option value="administrator">مدير المستشفى</option>
+                    <option value="lab-director">مدير المختبر</option>
+                    <option value="physician">طبيب</option>
+                    <option value="nurse">قيادة التمريض</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="region">المنطقة *</label>
+                  <select id="region" name="region" required>
+                    <option value="">اختر المنطقة</option>
+                    <option value="uae">الإمارات</option>
+                    <option value="saudi">السعودية</option>
+                    <option value="kuwait">الكويت</option>
+                    <option value="qatar">قطر</option>
+                    <option value="bahrain">البحرين</option>
+                    <option value="oman">عُمان</option>
+                    <option value="india">الهند</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>المنتجات المطلوبة</label>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="hims" name="products" value="hims">
+                    <label for="hims">نظام المستشفيات</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="eclinic" name="products" value="e-clinic">
+                    <label for="eclinic">إي-كلينيك</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="elab" name="products" value="e-lab">
+                    <label for="elab">إي-لاب</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="epharma" name="products" value="e-pharma">
+                    <label for="epharma">إي-فارما</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="telemedicine" name="products" value="telemedicine">
+                    <label for="telemedicine">الطب عن بُعد</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">أخبرنا عن مشروعك</label>
+                <textarea id="message" name="message" placeholder="صف متطلباتك والتحديات الحالية أو أسئلتك..."></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                إرسال الطلب
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="19" y1="12" x2="5" y2="12"/>
+                  <polyline points="12 5 5 12 12 19"/>
+                </svg>
+              </button>
+
+              <p class="form-note">بالإرسال، توافق على سياسة الخصوصية. لن نشارك بياناتك مع أطراف ثالثة.</p>
+            </form>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="contact-sidebar">
+            <!-- Head Office Card -->
+            <div class="info-card">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                المقر الرئيسي - دبي
+              </h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <div class="contact-item-label">العنوان</div>
+                  <div class="contact-item-value">مبنى الشعلة، النبودة E-301، دبي، الإمارات</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <div class="contact-item-label">الهاتف</div>
+                  <div class="contact-item-value">
+                    <a href="tel:+971565463880">+971 56 546 3880</a><br>
+                    <a href="tel:+971508627642">+971 50 862 7642</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <div class="contact-item-label">البريد الإلكتروني</div>
+                  <div class="contact-item-value">
+                    <a href="mailto:sales@medassolutions.com">sales@medassolutions.com</a><br>
+                    <a href="mailto:service@medassolutions.com">service@medassolutions.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 24/7 Support Card -->
+            <div class="info-card support-card">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                دعم على مدار الساعة
+              </h3>
+              <p>فريق الدعم لدينا متاح على مدار الساعة لمساعدتك في أي مشكلات تقنية أو استفسارات.</p>
+
+              <div class="support-links">
+                <a href="https://wa.me/971508627642" class="support-link" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  محادثة واتساب
+                </a>
+                <a href="mailto:service@medassolutions.com" class="support-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  إرسال بريد
+                </a>
+                <a href="tel:+971488520001" class="support-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  +971 48 852 001
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Offices Section -->
+    <section class="offices-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">8 مكاتب حول العالم</span>
+          <h2>تواجدنا العالمي</h2>
+          <p>خبرة محلية بمعايير عالمية. اعثر على أقرب مكتب ميداس إليك.</p>
+        </div>
+
+        <div class="offices-grid">
+          <!-- UAE - Dubai (Head Office) -->
+          <div class="office-card featured">
+            <div class="office-header">
+              <img src="https://flagcdn.com/w80/ae.png" alt="الإمارات" class="office-flag" loading="lazy">
+              <div class="office-title">
+                <h4>الإمارات العربية المتحدة</h4>
+                <span>دبي</span>
+              </div>
+            </div>
+            <div class="office-details">
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>مبنى الشعلة، النبودة E-301، دبي، الإمارات</span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span><a href="tel:+971565463880">+971 56 546 3880</a></span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span><a href="mailto:ashish@medassolutions.com">ashish@medassolutions.com</a></span>
+              </div>
+            </div>
+            <div class="office-actions">
+              <a href="tel:+971565463880" class="office-btn call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصال
+              </a>
+              <a href="https://wa.me/971508627642" class="office-btn whatsapp" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                واتساب
+              </a>
+            </div>
+          </div>
+
+          <!-- Saudi Arabia -->
+          <div class="office-card">
+            <div class="office-header">
+              <img src="https://flagcdn.com/w80/sa.png" alt="السعودية" class="office-flag" loading="lazy">
+              <div class="office-title">
+                <h4>المملكة العربية السعودية</h4>
+                <span>الخُبر</span>
+              </div>
+            </div>
+            <div class="office-details">
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>الثقبة الخُبر، شارع الرياض، تقاطع رقم 4، الظهران 31952</span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span><a href="tel:+966539321544">+966 53 932 1544</a></span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span><a href="mailto:naveed@medassolutions.com">naveed@medassolutions.com</a></span>
+              </div>
+            </div>
+            <div class="office-actions">
+              <a href="tel:+966539321544" class="office-btn call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصال بالمكتب
+              </a>
+            </div>
+          </div>
+
+          <!-- Kuwait -->
+          <div class="office-card">
+            <div class="office-header">
+              <img src="https://flagcdn.com/w80/kw.png" alt="الكويت" class="office-flag" loading="lazy">
+              <div class="office-title">
+                <h4>الكويت</h4>
+                <span>حولي</span>
+              </div>
+            </div>
+            <div class="office-details">
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>مكتب رقم 7، طابق الميزانين، برج لولو التعاون، شارع بيروت، حولي</span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span><a href="tel:+96560453978">+965 6045 3978</a></span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span><a href="mailto:rinu@medassolutions.com">rinu@medassolutions.com</a></span>
+              </div>
+            </div>
+            <div class="office-actions">
+              <a href="tel:+96560453978" class="office-btn call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصال بالمكتب
+              </a>
+            </div>
+          </div>
+
+          <!-- Qatar -->
+          <div class="office-card">
+            <div class="office-header">
+              <img src="https://flagcdn.com/w80/qa.png" alt="قطر" class="office-flag" loading="lazy">
+              <div class="office-title">
+                <h4>قطر</h4>
+                <span>الوكرة، الدوحة</span>
+              </div>
+            </div>
+            <div class="office-details">
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>مكتب F3، مبنى 54، منطقة 90، شارع 720، الوكرة</span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span><a href="tel:+97430197917">+974 3019 7917</a></span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span><a href="mailto:sinan@medassolutions.com">sinan@medassolutions.com</a></span>
+              </div>
+            </div>
+            <div class="office-actions">
+              <a href="tel:+97430197917" class="office-btn call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصال بالمكتب
+              </a>
+            </div>
+          </div>
+
+          <!-- Bahrain -->
+          <div class="office-card">
+            <div class="office-header">
+              <img src="https://flagcdn.com/w80/bh.png" alt="البحرين" class="office-flag" loading="lazy">
+              <div class="office-title">
+                <h4>البحرين</h4>
+                <span>المنامة</span>
+              </div>
+            </div>
+            <div class="office-details">
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>ص.ب: 11231، مكتب 14، مبنى 5، طريق 3001، المنامة بوغزال</span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span><a href="tel:+966539321544">+966 53 932 1544</a></span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span><a href="mailto:naveed@medassolutions.com">naveed@medassolutions.com</a></span>
+              </div>
+            </div>
+            <div class="office-actions">
+              <a href="tel:+966539321544" class="office-btn call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصال بالمكتب
+              </a>
+            </div>
+          </div>
+
+          <!-- India - Kochi -->
+          <div class="office-card">
+            <div class="office-header">
+              <img src="https://flagcdn.com/w80/in.png" alt="الهند" class="office-flag" loading="lazy">
+              <div class="office-title">
+                <h4>الهند</h4>
+                <span>كوتشي، كيرالا</span>
+              </div>
+            </div>
+            <div class="office-details">
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>الطابق الثالث، شاكرامبيلي أفينيو، طريق سيبورت إيربورت، كاكاناد، كوتشي 682021</span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span><a href="tel:+916282341473">+91 62823 41473</a></span>
+              </div>
+              <div class="office-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span><a href="mailto:rohith@medassolutions.com">rohith@medassolutions.com</a></span>
+              </div>
+            </div>
+            <div class="office-actions">
+              <a href="tel:+916282341473" class="office-btn call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصال بالمكتب
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">زورونا</span>
+          <h2>موقع المقر الرئيسي</h2>
+          <p>في قلب دبي، الإمارات العربية المتحدة</p>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.5835036456!2d55.32889231544387!3d25.26976198386656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ccf3de5d30b%3A0x9c7b0e15f7c7d8a4!2sAl%20Shoala%20Building!5e0!3m2!1sen!2sae!4v1701936000000!5m2!1sen!2sae"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="المقر الرئيسي لميداس سوليوشنز - مبنى الشعلة، دبي">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>هل أنت مستعد لتحويل عمليات الرعاية الصحية؟</h2>
+        <p>انضم إلى أكثر من 500 مؤسسة صحية في 4 قارات تثق بميداس سوليوشنز.</p>
+        <div class="cta-buttons">
+          <a href="tel:+971565463880" class="cta-btn primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            اتصل الآن
+          </a>
+          <a href="https://wa.me/971508627642" class="cta-btn outline" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            واتساب
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../../assets/images/medas-logo.png" alt="ميداس سوليوشنز" class="logo-image">
+          </a>
+          <p>حلول برمجية متكاملة للرعاية الصحية موثوق بها من قبل أكثر من 500 مؤسسة في الشرق الأوسط وأفريقيا وأمريكا وأوروبا.</p>
+          <div class="footer-gcc-flags">
+            <img src="https://flagcdn.com/w40/ae.png" alt="الإمارات" title="الإمارات">
+            <img src="https://flagcdn.com/w40/sa.png" alt="السعودية" title="السعودية">
+            <img src="https://flagcdn.com/w40/qa.png" alt="قطر" title="قطر">
+            <img src="https://flagcdn.com/w40/kw.png" alt="الكويت" title="الكويت">
+            <img src="https://flagcdn.com/w40/bh.png" alt="البحرين" title="البحرين">
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>الحلول</h4>
+          <ul>
+            <li><a href="../solutions/his.html">نظام معلومات المستشفيات</a></li>
+            <li><a href="../solutions/emr.html">السجلات الطبية الإلكترونية</a></li>
+            <li><a href="../solutions/lims.html">إدارة المختبرات</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>المنتجات</h4>
+          <ul>
+            <li><a href="../products/e-clinic.html">إي-كلينيك</a></li>
+            <li><a href="../products/hims.html">نظام المستشفيات</a></li>
+            <li><a href="../products/e-lab.html">إي-لاب</a></li>
+            <li><a href="../products/telemedicine.html">الطب عن بُعد</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>اتصل بنا</h4>
+          <ul>
+            <li>دبي، الإمارات (المقر الرئيسي)</li>
+            <li>السعودية | الكويت | قطر</li>
+            <li><a href="mailto:info@medassolutions.com">info@medassolutions.com</a></li>
+            <li><a href="tel:+971565463880">+971 56 546 3880</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ميداس سوليوشنز. جميع الحقوق محفوظة.</p>
+        <div class="footer-legal">
+          <a href="../privacy-policy.html">سياسة الخصوصية</a>
+          <a href="../terms-of-service.html">شروط الخدمة</a>
+          <a href="../../contact/index.html">English</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-buttons">
+    <a href="tel:+971565463880" class="floating-btn phone" aria-label="اتصل بنا">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+    <a href="https://wa.me/971508627642" class="floating-btn whatsapp" target="_blank" rel="noopener" aria-label="واتساب">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
