@@ -5,145 +5,256 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage - Highest Priority -->
+  <!-- Homepage - English & Arabic -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/"/>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zac10ck.github.io/medas-website/"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Arabic Homepage -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/ar/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/"/>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zac10ck.github.io/medas-website/"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Main Navigation Pages -->
-  <url>
-    <loc>https://zac10ck.github.io/medas-website/about/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://zac10ck.github.io/medas-website/about/team.html</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://zac10ck.github.io/medas-website/services/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://zac10ck.github.io/medas-website/solutions/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://zac10ck.github.io/medas-website/contact/</loc>
-    <lastmod>2025-12-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <!-- Products Index -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Individual Product Pages -->
+  <!-- E-Clinic Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/e-clinic.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-clinic.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-clinic.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/e-clinic.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-clinic.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-clinic.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- HIMS Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/hims.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/hims.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/hims.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/hims.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/hims.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/hims.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- E-Lab Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/e-lab.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-lab.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-lab.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/e-lab.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-lab.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-lab.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Telemedicine Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/telemedicine.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/telemedicine.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/telemedicine.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/telemedicine.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/telemedicine.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/telemedicine.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- E-Pharma Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/e-pharma.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-pharma.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-pharma.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/e-pharma.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-pharma.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-pharma.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- E-Veterinary Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/e-veterinary.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-veterinary.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-veterinary.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/e-veterinary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/e-veterinary.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/e-veterinary.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Mobile App Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/mobile-app.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/mobile-app.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/mobile-app.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/mobile-app.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/mobile-app.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/mobile-app.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- AccreHealth Product -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/products/accre-health.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/accre-health.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/accre-health.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/products/accre-health.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/products/accre-health.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/products/accre-health.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Solutions Pages -->
+  <!-- Solutions Index -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/solutions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/solutions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- HIS Solution -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/solutions/his.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/his.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/his.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/solutions/his.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/his.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/his.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- EMR Solution -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/solutions/emr.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/emr.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/emr.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/solutions/emr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/emr.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/emr.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- LIMS Solution -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/solutions/lims.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/lims.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/lims.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/solutions/lims.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solutions/lims.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solutions/lims.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -151,36 +262,158 @@
   <!-- Blog Section -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/blog/</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/blog/healthcare-digital-transformation-gcc.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/healthcare-digital-transformation-gcc.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/healthcare-digital-transformation-gcc.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/blog/healthcare-digital-transformation-gcc.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/healthcare-digital-transformation-gcc.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/healthcare-digital-transformation-gcc.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/nabidh-compliance-guide.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/blog/nabidh-compliance-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/nabidh-compliance-guide.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://zac10ck.github.io/medas-website/blog/emr-vs-ehr-differences.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/emr-vs-ehr-differences.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/emr-vs-ehr-differences.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/blog/emr-vs-ehr-differences.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/blog/emr-vs-ehr-differences.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/blog/emr-vs-ehr-differences.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Solution Finder Quiz -->
+  <!-- About Pages -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/about/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/about/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/about/team.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/about/team.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/about/team.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/about/team.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/about/team.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/about/team.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/services/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/services/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/services/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/services/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/contact/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/contact/"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Solution Finder -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/solution-finder.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solution-finder.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solution-finder.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/solution-finder.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/solution-finder.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/solution-finder.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -188,16 +421,52 @@
   <!-- Legal Pages -->
   <url>
     <loc>https://zac10ck.github.io/medas-website/privacy-policy.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/privacy-policy.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/privacy-policy.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://zac10ck.github.io/medas-website/terms-of-service.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/terms-of-service.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/terms-of-service.html"/>
+    <lastmod>2024-12-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/ar/terms-of-service.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zac10ck.github.io/medas-website/terms-of-service.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zac10ck.github.io/medas-website/ar/terms-of-service.html"/>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- RSS Feed -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/feed.xml</loc>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- AI Discovery Files -->
+  <url>
+    <loc>https://zac10ck.github.io/medas-website/llms.txt</loc>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
 
 </urlset>

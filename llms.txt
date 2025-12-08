@@ -1,0 +1,110 @@
+# MEDAS Solutions - Healthcare Software Provider
+> Enterprise healthcare software solutions for hospitals, clinics, and laboratories in the GCC region and worldwide.
+
+MEDAS Solutions is a leading healthcare technology company providing Hospital Information Systems (HIS), Electronic Medical Records (EMR), Laboratory Information Management Systems (LIMS), and telemedicine solutions. Founded in 2004, we serve 500+ healthcare facilities across the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and 20+ countries worldwide.
+
+## Company Overview
+- Founded: 2004
+- Headquarters: Dubai, UAE
+- Employees: 200+
+- Clients: 500+ healthcare facilities
+- Coverage: 4 continents, 20+ countries
+
+## Products
+
+### E-Clinic
+Comprehensive outpatient clinic management software for polyclinics and medical centers.
+- Multi-specialty support
+- Appointment scheduling and queue management
+- Clinical documentation and e-prescribing
+- Insurance claim processing
+- Patient portal and mobile app
+
+### HIMS (Hospital Information Management System)
+Complete web-based hospital ERP with 32+ integrated modules.
+- Patient registration and scheduling
+- Inpatient and outpatient management
+- Emergency department and operation theatre
+- Pharmacy, laboratory, and radiology
+- Billing, insurance, and inventory management
+
+### E-Lab (Laboratory Information System)
+Advanced laboratory workflow automation.
+- Sample tracking with barcode identification
+- 3000+ analyzer interfaces
+- Auto-validation and quality control
+- HL7/ASTM connectivity
+- Critical value alerts
+
+### Telemedicine Platform
+Virtual care solution for remote consultations.
+- HD video consultations
+- E-prescribing and file sharing
+- Online appointment booking and payments
+- Multi-participant calls
+
+### E-Pharma (Pharmacy Management)
+Complete pharmacy operations management.
+- Inventory and procurement management
+- Drug interaction checking
+- Controlled substance management
+- Multi-branch support
+
+### E-Veterinary
+Specialized software for veterinary clinics.
+- Pet registration and medical records
+- Vaccination tracking
+- Appointment scheduling and billing
+
+### Mobile Application
+Patient engagement platform for iOS and Android.
+- Appointment booking and medical history access
+- Lab results and prescription viewing
+- Video consultations and bill payments
+
+### AccreHealth
+JCI accreditation and quality management software.
+- Document and policy management
+- Audit scheduling and CAPA tracking
+- Performance indicators
+
+## Solutions
+
+### Hospital Information System (HIS)
+End-to-end hospital management covering all clinical, administrative, and financial workflows.
+
+### Electronic Medical Records (EMR)
+Comprehensive clinical documentation with decision support, e-prescribing, and patient portal.
+
+### Laboratory Information Management System (LIMS)
+Complete lab automation with analyzer integration, quality control, and regulatory compliance.
+
+## Compliance & Integrations
+- NABIDH (Dubai Health Authority)
+- Malaffi (Abu Dhabi Health Information Exchange)
+- NPHIES (Saudi National Health Information Exchange)
+- Riayati (Saudi Electronic Health Records)
+- HIPAA, GDPR compliance
+- HL7, FHIR, DICOM, ICD-10, SNOMED standards
+
+## Service Regions
+- UAE: Dubai (Headquarters), Abu Dhabi
+- Saudi Arabia: Al Khobar, Riyadh
+- Qatar: Doha
+- Kuwait: Kuwait City
+- Bahrain: Manama
+- India: Kochi (Development Center)
+- Africa, Europe, Americas
+
+## Contact Information
+- Website: https://medassolutions.com
+- Email: info@medassolutions.com
+- Phone: +971 4 259 8651
+- Address: Business Bay, Dubai, UAE
+
+## Languages
+- English: https://zac10ck.github.io/medas-website/
+- Arabic: https://zac10ck.github.io/medas-website/ar/
+
+## Keywords
+hospital software UAE, EMR software Saudi Arabia, healthcare software Dubai, hospital management system GCC, clinic software Abu Dhabi, NABIDH compliant software, Malaffi integration, NPHIES integration, laboratory information system, telemedicine UAE, healthcare IT solutions Middle East

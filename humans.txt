@@ -1,0 +1,37 @@
+/* TEAM */
+Company: MEDAS Solutions
+Role: Healthcare Software Provider
+Location: Dubai, UAE
+Founded: 2004
+Website: https://medassolutions.com
+Contact: info@medassolutions.com
+
+/* LEADERSHIP */
+Focus: Enterprise Healthcare IT Solutions
+Expertise: Hospital Information Systems, EMR, Laboratory Systems
+Markets: GCC, Middle East, Africa, Europe, Americas
+
+/* THANKS */
+To our 500+ healthcare clients worldwide for their trust and partnership.
+To our dedicated team of 200+ professionals.
+Built with passion for improving healthcare through technology.
+
+/* SITE */
+Last update: 2024-12-08
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Responsive design, PWA ready, SEO optimized
+Languages: English, Arabic (RTL supported)
+Frameworks: Modern web technologies
+
+/* HEALTHCARE FOCUS */
+Serving: Hospitals, Clinics, Laboratories, Pharmacies
+Products: E-Clinic, HIMS, E-Lab, Telemedicine, E-Pharma, AccreHealth
+Compliance: NABIDH, Malaffi, NPHIES, HIPAA, GDPR, JCI, HL7, FHIR
+
+/* REGIONAL PRESENCE */
+UAE: Dubai (HQ), Abu Dhabi
+Saudi Arabia: Al Khobar, Riyadh
+Qatar: Doha
+Kuwait: Kuwait City
+Bahrain: Manama
+India: Kochi (Development Center)

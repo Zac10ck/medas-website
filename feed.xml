@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MEDAS Solutions - Healthcare Technology Blog</title>
+    <link>https://zac10ck.github.io/medas-website/blog/</link>
+    <description>Expert insights on healthcare digital transformation, regulatory compliance, EMR/EHR systems, and technology trends in the GCC region. Stay updated with the latest in hospital management systems, NABIDH compliance, and healthcare IT solutions.</description>
+    <language>en-US</language>
+    <copyright>Copyright 2024 MEDAS Solutions. All rights reserved.</copyright>
+    <managingEditor>info@medassolutions.com (MEDAS Solutions)</managingEditor>
+    <webMaster>info@medassolutions.com (MEDAS Solutions)</webMaster>
+    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 GMT</lastBuildDate>
+    <ttl>60</ttl>
+    <atom:link href="https://zac10ck.github.io/medas-website/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <image>
+      <url>https://medassolutions.com/wp-content/uploads/2020/04/medas-logo.png</url>
+      <title>MEDAS Solutions</title>
+      <link>https://zac10ck.github.io/medas-website/</link>
+      <width>200</width>
+      <height>65</height>
+    </image>
+
+    <item>
+      <title>Healthcare Digital Transformation in the GCC: 2024 Trends and Beyond</title>
+      <link>https://zac10ck.github.io/medas-website/blog/healthcare-digital-transformation-gcc.html</link>
+      <guid isPermaLink="true">https://zac10ck.github.io/medas-website/blog/healthcare-digital-transformation-gcc.html</guid>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+      <dc:creator>MEDAS Solutions</dc:creator>
+      <category>Industry Insights</category>
+      <category>Digital Transformation</category>
+      <category>GCC Healthcare</category>
+      <description><![CDATA[Explore how healthcare organizations across the UAE, Saudi Arabia, and the broader GCC region are leveraging technology to improve patient outcomes and operational efficiency. Learn about AI integration, telemedicine adoption, and the future of healthcare in the Middle East.]]></description>
+      <content:encoded><![CDATA[<p>The GCC healthcare sector is undergoing a remarkable digital transformation, driven by government initiatives, technological advancements, and changing patient expectations. This article explores the key trends shaping healthcare technology in the UAE, Saudi Arabia, Qatar, Kuwait, and Bahrain.</p><p>Topics covered include: AI and machine learning in diagnostics, telemedicine growth post-pandemic, health information exchanges (NABIDH, Malaffi, NPHIES), and the future of connected healthcare.</p>]]></content:encoded>
+    </item>
+
+    <item>
+      <title>Complete Guide to NABIDH Compliance for Healthcare Providers</title>
+      <link>https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html</link>
+      <guid isPermaLink="true">https://zac10ck.github.io/medas-website/blog/nabidh-compliance-guide.html</guid>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+      <dc:creator>MEDAS Solutions</dc:creator>
+      <category>Compliance</category>
+      <category>NABIDH</category>
+      <category>Dubai Healthcare</category>
+      <description><![CDATA[Everything you need to know about Dubai's Network and Analysis Backbone for Integrated Dubai Health (NABIDH). Learn about compliance requirements, integration steps, data standards, and how to ensure your healthcare facility meets DHA regulations.]]></description>
+      <content:encoded><![CDATA[<p>NABIDH is Dubai Health Authority's unified health information exchange platform that connects all healthcare providers in Dubai. This comprehensive guide covers everything from registration to full compliance.</p><p>Key topics: NABIDH standards and protocols, HL7 FHIR integration, patient consent management, data security requirements, and step-by-step implementation guide.</p>]]></content:encoded>
+    </item>
+
+    <item>
+      <title>EMR vs EHR: Understanding the Key Differences</title>
+      <link>https://zac10ck.github.io/medas-website/blog/emr-vs-ehr-differences.html</link>
+      <guid isPermaLink="true">https://zac10ck.github.io/medas-website/blog/emr-vs-ehr-differences.html</guid>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
+      <dc:creator>MEDAS Solutions</dc:creator>
+      <category>Technology</category>
+      <category>EMR</category>
+      <category>EHR</category>
+      <description><![CDATA[A comprehensive comparison of Electronic Medical Records (EMR) and Electronic Health Records (EHR) systems. Understand the differences, benefits, and use cases to help your healthcare organization make the right choice for patient data management.]]></description>
+      <content:encoded><![CDATA[<p>While often used interchangeably, EMR and EHR systems serve different purposes in healthcare. This article clarifies the distinctions and helps healthcare providers choose the right solution.</p><p>Topics covered: Definition and scope differences, interoperability considerations, regulatory requirements, implementation considerations, and future trends in health records management.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
