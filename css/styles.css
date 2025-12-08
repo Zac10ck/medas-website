@@ -559,7 +559,7 @@ p {
   background: transparent;
   border: none;
   border-radius: 50px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--gray-600);
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -570,8 +570,8 @@ p {
 }
 
 .lang-btn:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.15);
+  color: var(--primary);
+  background: rgba(15, 76, 129, 0.08);
 }
 
 .lang-btn.active {
