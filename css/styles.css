@@ -9275,3 +9275,858 @@ a:active {
     bottom: 120px;
   }
 }
+
+/* ==========================================================================
+   SPECTACULAR ANIMATIONS - GSAP Enhanced
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------
+   Page Loader
+   ------------------------------------------------------------------------- */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.loader-logo {
+  width: 180px;
+  animation: logoBreath 2s ease-in-out infinite;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes logoBreath {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.loader-progress {
+  width: 200px;
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.loader-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent-light), var(--accent));
+  border-radius: 2px;
+  transition: width 0.1s ease;
+}
+
+.loader-text {
+  color: rgba(255,255,255,0.8);
+  font-size: var(--text-sm);
+  animation: textPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes textPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* -------------------------------------------------------------------------
+   Scroll Progress Bar
+   ------------------------------------------------------------------------- */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(15, 76, 129, 0.1);
+  z-index: 1001;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  box-shadow: 0 0 10px var(--accent);
+  transition: width 0.05s ease-out;
+}
+
+/* -------------------------------------------------------------------------
+   Hero Animated Background
+   ------------------------------------------------------------------------- */
+.hero-animated::before {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 76, 129, 0.92) 0%,
+    rgba(8, 145, 178, 0.85) 50%,
+    rgba(10, 58, 100, 0.92) 100%
+  );
+  background-size: 400% 400%;
+  animation: heroGradientFlow 15s ease infinite;
+}
+
+@keyframes heroGradientFlow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Floating Particles Container */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(34, 211, 238, 0.6);
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: particleFloat 8s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-100px) translateX(30px);
+    opacity: 1;
+  }
+}
+
+/* Morphing Background Shapes */
+.hero-morph-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.morph-shape {
+  position: absolute;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(15, 76, 129, 0.1));
+  filter: blur(60px);
+  animation: morphShape 12s ease-in-out infinite;
+  opacity: 0;
+}
+
+.morph-1 {
+  width: 500px;
+  height: 500px;
+  top: -150px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.morph-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  left: -100px;
+  animation-delay: -4s;
+}
+
+.morph-3 {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: -8s;
+}
+
+@keyframes morphShape {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: rotate(0deg) scale(1);
+  }
+  33% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    transform: rotate(120deg) scale(1.1);
+  }
+  66% {
+    border-radius: 50% 50% 30% 70% / 50% 70% 30% 50%;
+    transform: rotate(240deg) scale(0.95);
+  }
+}
+
+/* Floating Healthcare Icons */
+.hero-floating-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-icon {
+  position: absolute;
+  opacity: 0.1;
+  color: white;
+  animation: iconFloat 10s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(10deg);
+  }
+}
+
+/* -------------------------------------------------------------------------
+   USP Cards - 3D Effects
+   ------------------------------------------------------------------------- */
+.usp-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(60px) rotateX(20deg);
+}
+
+.usp-card.animated {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.usp-card:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.usp-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.usp-card:hover::before {
+  opacity: 1;
+}
+
+.usp-card:hover > div:first-child {
+  box-shadow: 0 0 30px currentColor;
+  transform: scale(1.1) rotate(10deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* -------------------------------------------------------------------------
+   GCC Compliance Cards - Shine Effect
+   ------------------------------------------------------------------------- */
+.gcc-compliance-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.gcc-compliance-item.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gcc-compliance-item.featured {
+  position: relative;
+  overflow: hidden;
+}
+
+.gcc-compliance-item.featured::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255,255,255,0.1) 50%,
+    transparent 70%
+  );
+  transform: rotate(45deg) translateX(-100%);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+}
+
+.gcc-compliance-item.featured:hover::after {
+  transform: rotate(45deg) translateX(100%);
+}
+
+.gcc-logo {
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.gcc-compliance-item:hover .gcc-logo {
+  transform: scale(1.05);
+}
+
+/* -------------------------------------------------------------------------
+   Solutions - Parallax & Reveal
+   ------------------------------------------------------------------------- */
+.solution-showcase-item {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.solution-showcase-item.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.solution-showcase-image {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.solution-showcase-image img {
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.solution-showcase-item:hover .solution-showcase-image img {
+  transform: scale(1.08);
+}
+
+.solution-showcase-content > * {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.solution-showcase-item.reverse .solution-showcase-content > * {
+  transform: translateX(-30px);
+}
+
+.solution-showcase-content.animated > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.solution-showcase-content > *:nth-child(1) { transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s; }
+.solution-showcase-content > *:nth-child(2) { transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s; }
+.solution-showcase-content > *:nth-child(3) { transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s; }
+.solution-showcase-content > *:nth-child(4) { transition: opacity 0.5s ease 0.4s, transform 0.5s ease 0.4s; }
+.solution-showcase-content > *:nth-child(5) { transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s; }
+
+/* -------------------------------------------------------------------------
+   Stats - Glow & Counter Effects
+   ------------------------------------------------------------------------- */
+.stat-item {
+  position: relative;
+  transition: transform 0.4s ease;
+  opacity: 0;
+  transform: scale(0.8) translateY(30px);
+}
+
+.stat-item.animated {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.stat-item:hover {
+  transform: scale(1.1);
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.3) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.stat-item:hover::before {
+  opacity: 1;
+  animation: statGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes statGlow {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.stat-number {
+  position: relative;
+  display: inline-block;
+}
+
+.stat-number::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 60%;
+  height: 3px;
+  background: var(--accent-light);
+  border-radius: 2px;
+  transition: transform 0.4s ease;
+}
+
+.stat-item:hover .stat-number::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* -------------------------------------------------------------------------
+   Feature Cards - 3D Tilt
+   ------------------------------------------------------------------------- */
+.feature-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px) rotateX(15deg);
+}
+
+.feature-card.animated {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.feature-card:hover {
+  box-shadow: 0 25px 50px rgba(15, 76, 129, 0.2);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: translateY(-8px) rotate(10deg);
+  box-shadow: 0 15px 30px rgba(15, 76, 129, 0.3);
+}
+
+/* -------------------------------------------------------------------------
+   Testimonial - Ken Burns & Quote Animation
+   ------------------------------------------------------------------------- */
+.testimonial-card {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.testimonial-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.8s ease;
+  pointer-events: none;
+}
+
+.testimonial-card:hover::before {
+  left: 100%;
+}
+
+.testimonial-image {
+  overflow: hidden;
+}
+
+.testimonial-image img {
+  transition: transform 10s ease;
+}
+
+.testimonial-card:hover .testimonial-image img {
+  transform: scale(1.1);
+}
+
+.testimonial-quote {
+  position: relative;
+}
+
+.testimonial-quote::before {
+  content: '"';
+  font-size: 6rem;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  color: var(--primary);
+  opacity: 0.1;
+  font-family: Georgia, serif;
+  line-height: 1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.testimonial-card:hover .testimonial-quote::before {
+  transform: scale(1.2) rotate(-10deg);
+  opacity: 0.2;
+}
+
+/* -------------------------------------------------------------------------
+   GCC Office Cards - Flag Wave & Card Dance
+   ------------------------------------------------------------------------- */
+.gcc-office-card {
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
+}
+
+.gcc-office-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gcc-office-card:nth-child(odd) {
+  --rotate-direction: 5deg;
+}
+
+.gcc-office-card:nth-child(even) {
+  --rotate-direction: -5deg;
+}
+
+.gcc-office-card:hover {
+  transform: translateY(-10px) rotateY(var(--rotate-direction));
+  box-shadow: 0 20px 40px rgba(15, 76, 129, 0.2);
+}
+
+.gcc-office-flag {
+  overflow: hidden;
+  position: relative;
+}
+
+.gcc-office-flag img {
+  transition: transform 0.4s ease;
+}
+
+.gcc-office-card:hover .gcc-office-flag img {
+  animation: flagWave 1s ease-in-out infinite;
+}
+
+@keyframes flagWave {
+  0%, 100% { transform: perspective(500px) rotateY(0deg); }
+  25% { transform: perspective(500px) rotateY(8deg); }
+  75% { transform: perspective(500px) rotateY(-8deg); }
+}
+
+.location-tag {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gcc-office-card:hover .location-tag {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
+}
+
+.gcc-office-card:hover .location-tag.headquarters {
+  animation: tagPulse 0.6s ease infinite;
+}
+
+@keyframes tagPulse {
+  0%, 100% { transform: scale(1.05); }
+  50% { transform: scale(1.1); }
+}
+
+/* -------------------------------------------------------------------------
+   Integration Items - Wave Reveal
+   ------------------------------------------------------------------------- */
+.integration-item {
+  opacity: 0;
+  transform: scale(0.5) rotate(-10deg);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.integration-item.animated {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+
+.integration-item:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* -------------------------------------------------------------------------
+   Trust Badges - Pop Animation
+   ------------------------------------------------------------------------- */
+.trust-badge {
+  opacity: 0;
+  transform: translateY(30px) scale(0.8);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.trust-badge.animated {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.trust-badge:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.trust-badge-icon {
+  transition: transform 0.4s ease;
+}
+
+.trust-badge:hover .trust-badge-icon {
+  transform: rotate(360deg);
+}
+
+/* -------------------------------------------------------------------------
+   Buttons - Magnetic & Ripple Effects
+   ------------------------------------------------------------------------- */
+.btn-magnetic {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-magnetic::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle at center, rgba(15, 76, 129, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.btn-magnetic:hover::before {
+  opacity: 1;
+}
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+.btn-ripple:active::after {
+  transform: translate(-50%, -50%) scale(4);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.3s ease 0.2s;
+}
+
+/* -------------------------------------------------------------------------
+   CTA Section - Animated Background
+   ------------------------------------------------------------------------- */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 50%);
+  animation: ctaGlow 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ctaGlow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(10%, 10%) scale(1.2); }
+}
+
+/* -------------------------------------------------------------------------
+   Floating Contact Buttons - Enhanced
+   ------------------------------------------------------------------------- */
+.floating-contact-btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-contact-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 50%);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  pointer-events: none;
+}
+
+.floating-contact-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.floating-contact-btn:hover {
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.floating-contact-btn.whatsapp {
+  position: relative;
+}
+
+.floating-contact-btn.whatsapp::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  animation: whatsappPing 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes whatsappPing {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Newsletter Section - Animated Border
+   ------------------------------------------------------------------------- */
+.newsletter-form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.2);
+}
+
+.newsletter-form button {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-form button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.newsletter-form button:hover::before {
+  left: 100%;
+}
+
+/* -------------------------------------------------------------------------
+   Section Animations - Scroll Triggered
+   ------------------------------------------------------------------------- */
+.section-header {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-header.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -------------------------------------------------------------------------
+   Hardware Acceleration
+   ------------------------------------------------------------------------- */
+.hero-particle,
+.floating-icon,
+.morph-shape,
+.usp-card,
+.feature-card,
+.gcc-office-card,
+.gcc-compliance-item,
+.stat-item,
+.btn-magnetic,
+.solution-showcase-item,
+.testimonial-card,
+.trust-badge,
+.integration-item {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* -------------------------------------------------------------------------
+   Reduced Motion Preference
+   ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-particles,
+  .hero-floating-icons,
+  .hero-morph-shapes,
+  .page-loader {
+    display: none !important;
+  }
+
+  .morph-shape,
+  .hero-particle,
+  .floating-icon {
+    animation: none !important;
+  }
+}

@@ -622,6 +622,83 @@
   transform: translateX(0);
 }
 
+/* GSAP Animation RTL Adjustments */
+[dir="rtl"] .solution-showcase-content > * {
+  transform: translateX(-30px);
+}
+
+[dir="rtl"] .solution-showcase-item.reverse .solution-showcase-content > * {
+  transform: translateX(30px);
+}
+
+[dir="rtl"] .solution-showcase-content.animated > * {
+  transform: translateX(0);
+}
+
+/* GCC Office Cards - Mirrored rotation */
+[dir="rtl"] .gcc-office-card:nth-child(odd) {
+  --rotate-direction: -5deg;
+}
+
+[dir="rtl"] .gcc-office-card:nth-child(even) {
+  --rotate-direction: 5deg;
+}
+
+/* Morph shapes positioning */
+[dir="rtl"] .morph-1 {
+  right: auto;
+  left: -100px;
+}
+
+[dir="rtl"] .morph-2 {
+  left: auto;
+  right: -100px;
+}
+
+/* Floating icons mirror positions */
+[dir="rtl"] .floating-icon {
+  animation-direction: reverse;
+}
+
+/* Quote mark position */
+[dir="rtl"] .testimonial-quote::before {
+  left: auto;
+  right: -10px;
+}
+
+/* Scroll progress bar */
+[dir="rtl"] .scroll-progress-bar {
+  right: 0;
+  left: auto;
+}
+
+/* Shine effect direction */
+[dir="rtl"] .gcc-compliance-item.featured::after {
+  transform: rotate(-45deg) translateX(100%);
+}
+
+[dir="rtl"] .gcc-compliance-item.featured:hover::after {
+  transform: rotate(-45deg) translateX(-100%);
+}
+
+/* Button shine effect */
+[dir="rtl"] .floating-contact-btn::before {
+  transform: translateX(100%);
+}
+
+[dir="rtl"] .floating-contact-btn:hover::before {
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .newsletter-form button::before {
+  left: auto;
+  right: -100%;
+}
+
+[dir="rtl"] .newsletter-form button:hover::before {
+  right: 100%;
+}
+
 /* ========================================
    Print Styles RTL
    ======================================== */
