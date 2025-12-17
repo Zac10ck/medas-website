@@ -6,14 +6,31 @@
 (function() {
   'use strict';
 
-  // Wait for GSAP to load
-  if (typeof gsap === 'undefined') {
-    console.warn('GSAP not loaded');
-    return;
+  // Wait for GSAP to be available
+  function waitForGSAP(callback) {
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      callback();
+    } else {
+      setTimeout(() => waitForGSAP(callback), 50);
+    }
   }
 
-  // Register ScrollTrigger plugin
-  gsap.registerPlugin(ScrollTrigger);
+  function startAnimations() {
+    waitForGSAP(function() {
+      // Register ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Initialize everything
+      init();
+    });
+  }
+
+  // Run when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startAnimations);
+  } else {
+    startAnimations();
+  }
 
   // =========================================================================
   // PAGE LOADER
@@ -644,13 +661,6 @@
     initGCCOffices();
     initMagneticButtons();
     initParallax();
-  }
-
-  // Run on DOM ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
   }
 
 })();
