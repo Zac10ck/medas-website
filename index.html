@@ -332,22 +332,6 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Page Loader -->
-  <div class="page-loader" id="pageLoader" aria-hidden="true">
-    <div class="loader-content">
-      <img src="assets/images/medas-logo.png" alt="" class="loader-logo">
-      <div class="loader-progress">
-        <div class="loader-bar"></div>
-      </div>
-      <p class="loader-text">Loading Healthcare Excellence...</p>
-    </div>
-  </div>
-
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress-container" aria-hidden="true">
-    <div class="scroll-progress-bar"></div>
-  </div>
-
   <!-- Skip Navigation Link for Accessibility -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -530,18 +514,9 @@
 
   <main id="main-content" role="main">
     <!-- Hero Section with Background Image -->
-    <section class="hero-image-bg hero-animated" aria-labelledby="hero-title" style="background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=2000&q=80');">
-      <!-- Animated Background Elements -->
-      <div class="hero-particles" aria-hidden="true"></div>
-      <div class="hero-morph-shapes" aria-hidden="true">
-        <div class="morph-shape morph-1"></div>
-        <div class="morph-shape morph-2"></div>
-        <div class="morph-shape morph-3"></div>
-      </div>
-      <div class="hero-floating-icons" aria-hidden="true"></div>
-
+    <section class="hero-image-bg" aria-labelledby="hero-title" style="background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=2000&q=80');">
       <div class="container">
-        <article class="hero__content" data-animate="hero">
+        <article class="hero__content" data-animate>
           <p class="overline" style="color: var(--accent-light);">Your Local Healthcare Technology Partner</p>
           <h1 id="hero-title" class="hero__title">GCC's Most Trusted Healthcare Software</h1>
           <p class="hero__subtitle">
@@ -1250,12 +1225,7 @@
     </div>
   </div>
 
-  <!-- GSAP Animation Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-
   <script src="js/main.js" defer></script>
   <script src="js/popup.js" defer></script>
-  <script src="js/animations.js" defer></script>
 </body>
 </html>
